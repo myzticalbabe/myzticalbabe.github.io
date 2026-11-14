@@ -1,0 +1,867 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:17:30",
+  "domain": "cain",
+  "label": "CAIN \u2014 PSYCHOANALYSIS + RENDER",
+  "kind": "code",
+  "declared_roots": [
+    "src/CODEX",
+    "src/PSYCHE"
+  ],
+  "declared_files": [],
+  "totals": {
+    "modules": 106,
+    "lines": 41697,
+    "classes": 70,
+    "funcs": 0,
+    "methods": 290,
+    "public_api": 290,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 8,
+    "subpackages": 4,
+    "public_named_classes": 69,
+    "functions": 221,
+    "silence_guards": 115,
+    "entry_points": 63,
+    "parse_failures": 0,
+    "standalone_trees": 6,
+    "standalone_subpackages": 4
+  },
+  "trees": {
+    "CODEX.CORE": {
+      "modules": 16,
+      "lines": 3305,
+      "classes": 18,
+      "funcs": 14,
+      "methods": 73,
+      "public_api": 32,
+      "silence": 16,
+      "mains": 6,
+      "hubs": [
+        "paths"
+      ],
+      "subs": 0,
+      "inbound_trees": [
+        "(root)",
+        "POPUPS",
+        "SESSION_TEMPLATE",
+        "TESTING",
+        "VIDEOS",
+        "comprehensive"
+      ],
+      "outbound_trees": [],
+      "standalone": false,
+      "is_trunk": true,
+      "saplings": 0,
+      "shard_remainder": 16
+    },
+    "CODEX.DOCUMENTATION": {
+      "modules": 1,
+      "lines": 1,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 1
+    },
+    "CODEX.POPUPS": {
+      "modules": 10,
+      "lines": 3085,
+      "classes": 5,
+      "funcs": 4,
+      "methods": 35,
+      "public_api": 9,
+      "silence": 10,
+      "mains": 8,
+      "hubs": [
+        "audit",
+        "paths"
+      ],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [
+        "CORE"
+      ],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 10
+    },
+    "CODEX.SESSION_TEMPLATE": {
+      "modules": 6,
+      "lines": 6848,
+      "classes": 0,
+      "funcs": 15,
+      "methods": 0,
+      "public_api": 15,
+      "silence": 5,
+      "mains": 5,
+      "hubs": [
+        "audit",
+        "inference"
+      ],
+      "subs": 1,
+      "inbound_trees": [],
+      "outbound_trees": [
+        "CORE"
+      ],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 6
+    },
+    "CODEX.TESTING": {
+      "modules": 10,
+      "lines": 646,
+      "classes": 11,
+      "funcs": 1,
+      "methods": 25,
+      "public_api": 12,
+      "silence": 19,
+      "mains": 5,
+      "hubs": [
+        "paths"
+      ],
+      "subs": 3,
+      "inbound_trees": [],
+      "outbound_trees": [
+        "CORE"
+      ],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 10
+    },
+    "CODEX.VIDEOS": {
+      "modules": 22,
+      "lines": 13244,
+      "classes": 4,
+      "funcs": 54,
+      "methods": 30,
+      "public_api": 57,
+      "silence": 24,
+      "mains": 20,
+      "hubs": [
+        "audit",
+        "paths",
+        "worm_registry"
+      ],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [
+        "CORE"
+      ],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 22
+    },
+    "CODEX.comprehensive": {
+      "modules": 7,
+      "lines": 2315,
+      "classes": 0,
+      "funcs": 11,
+      "methods": 0,
+      "public_api": 11,
+      "silence": 11,
+      "mains": 6,
+      "hubs": [
+        "paths"
+      ],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [
+        "CORE"
+      ],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 7
+    },
+    "PSYCHE": {
+      "modules": 14,
+      "lines": 4593,
+      "classes": 19,
+      "funcs": 63,
+      "methods": 74,
+      "public_api": 82,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    }
+  },
+  "classes": {
+    "total": 70,
+    "public": 53,
+    "by_tree": {
+      "CODEX.(root)": [
+        {
+          "name": "CODEXStudio",
+          "bases": [],
+          "methods": 19,
+          "public_methods": 1,
+          "public": true,
+          "module": "CODEX_Studio.py"
+        },
+        {
+          "name": "DiTVideoPipeline",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "HTMLSceneExtractor",
+          "bases": [
+            "HTMLParser"
+          ],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "CODEX_Studio.py"
+        },
+        {
+          "name": "CogVideoXPipelineWrapper",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "HTMLTextExtractor",
+          "bases": [
+            "HTMLParser"
+          ],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "CODEX_Studio.py"
+        },
+        {
+          "name": "LLMPromptRewriter",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 1,
+          "public": true,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "TensorRTOptimizer",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "TritonDeployer",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "InjectionError",
+          "bases": [
+            "RuntimeError"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "inject_session_cain.py"
+        },
+        {
+          "name": "VideoCodec",
+          "bases": [
+            "str",
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "VideoGenerationConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "VideoGenerationResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "dit_video_pipeline.py"
+        },
+        {
+          "name": "VideoModel",
+          "bases": [
+            "str",
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "dit_video_pipeline.py"
+        }
+      ],
+      "CODEX.CORE": [
+        {
+          "name": "EmojiMaker",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 13,
+          "public": true,
+          "module": "CORE/emoji_maker.py"
+        },
+        {
+          "name": "AutoDownloader",
+          "bases": [],
+          "methods": 14,
+          "public_methods": 9,
+          "public": true,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "AsciiFlowchart",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 10,
+          "public": true,
+          "module": "CORE/ascii_flowchart.py"
+        },
+        {
+          "name": "PersistentState",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "DocumentationGenerator",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "CORE/AUTO_DOC_GENERATOR.py"
+        },
+        {
+          "name": "FrameworkRegistry",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "FrameworkPlugin",
+          "bases": [
+            "ABC"
+          ],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "PIPFrameworkPlugin",
+          "bases": [
+            "FrameworkPlugin"
+          ],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "EmojiDef",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "CORE/emoji_maker.py"
+        },
+        {
+          "name": "AnimationDef",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/enhanced_animations.py"
+        },
+        {
+          "name": "Category",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/emoji_maker.py"
+        },
+        {
+          "name": "DownloadProgress",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "DownloadState",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "Emotion",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/emoji_maker.py"
+        },
+        {
+          "name": "FrameworkInfo",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "InstallationResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/AUTO_DOWNLOADER.py"
+        },
+        {
+          "name": "Mood",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/emoji_maker.py"
+        },
+        {
+          "name": "Node",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CORE/ascii_flowchart.py"
+        }
+      ],
+      "CODEX.POPUPS": [
+        {
+          "name": "AnimatedCard",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 8,
+          "public": true,
+          "module": "POPUPS/POPUP_WORKING.py"
+        },
+        {
+          "name": "AzazaelPopup",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "POPUPS/POPUP_CLICKABLE.py"
+        },
+        {
+          "name": "AzazaelPopup",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "POPUPS/POPUP_DETAILED.py"
+        },
+        {
+          "name": "AzazaelPopup",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "POPUPS/POPUP_WORKING.py"
+        },
+        {
+          "name": "RichPopup",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "POPUPS/POPUP_RICH.py"
+        }
+      ],
+      "CODEX.TESTING": [
+        {
+          "name": "PerformanceBenchmarks",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "TESTING/PERFORMANCE/test_performance.py"
+        },
+        {
+          "name": "TestHYDRACluster",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "TESTING/UNIT/test_hydra.py"
+        },
+        {
+          "name": "TestWORMZ",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "TESTING/UNIT/test_wormz.py"
+        },
+        {
+          "name": "TestFunctionalWorms",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "TESTING/UNIT/test_wormz.py"
+        },
+        {
+          "name": "TestHYDRAMETA",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "TESTING/UNIT/test_metaworms.py"
+        },
+        {
+          "name": "TestHYDRADataClasses",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "TESTING/UNIT/test_hydra.py"
+        },
+        {
+          "name": "TestKLINKIntegration",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "TESTING/INTEGRATION/test_ecosystem_integration.py"
+        },
+        {
+          "name": "TestMetaWormConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "TESTING/UNIT/test_metaworms.py"
+        },
+        {
+          "name": "TestMetaWormResult",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "TESTING/UNIT/test_metaworms.py"
+        },
+        {
+          "name": "TestMetaWormsIntegration",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "TESTING/INTEGRATION/test_ecosystem_integration.py"
+        },
+        {
+          "name": "TestWORMZHydraIntegration",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "TESTING/INTEGRATION/test_ecosystem_integration.py"
+        }
+      ],
+      "CODEX.VIDEOS": [
+        {
+          "name": "DualPanePopup",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 10,
+          "public": true,
+          "module": "VIDEOS/create_dual_pane_popup.py"
+        },
+        {
+          "name": "AzazaelEducationalVideo",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 9,
+          "public": true,
+          "module": "VIDEOS/create_azazael_educational_video.py"
+        },
+        {
+          "name": "DashboardCardDataExtractor",
+          "bases": [
+            "HTMLParser"
+          ],
+          "methods": 9,
+          "public_methods": 6,
+          "public": true,
+          "module": "VIDEOS/generate_dashboard_video.py"
+        },
+        {
+          "name": "_CodePanel",
+          "bases": [
+            "tk.Frame"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "VIDEOS/create_dual_pane_popup.py"
+        }
+      ],
+      "PSYCHE.(root)": [
+        {
+          "name": "PersonNetwork",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 15,
+          "public": true,
+          "module": "network.py"
+        },
+        {
+          "name": "IntuitionIndex",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 14,
+          "public": true,
+          "module": "intuition.py"
+        },
+        {
+          "name": "TherapeuticLoop",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "rt_agent.py"
+        },
+        {
+          "name": "SessionChannel",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "rt_channel.py"
+        },
+        {
+          "name": "TraitVector",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 6,
+          "public": true,
+          "module": "traits.py"
+        },
+        {
+          "name": "PersonArtifact",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "artifact.py"
+        },
+        {
+          "name": "ConstructionReport",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "constructions.py"
+        },
+        {
+          "name": "Edge",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "network.py"
+        },
+        {
+          "name": "Record",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "elicitation.py"
+        },
+        {
+          "name": "Prototype",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "intuition.py"
+        },
+        {
+          "name": "ChannelStats",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "rt_channel.py"
+        },
+        {
+          "name": "Frame",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "constructions.py"
+        },
+        {
+          "name": "Item",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "elicitation.py"
+        },
+        {
+          "name": "Reading",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "intuition.py"
+        },
+        {
+          "name": "Session",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "elicitation.py"
+        },
+        {
+          "name": "Triage",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "rt_agent.py"
+        },
+        {
+          "name": "TurnResponse",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "rt_agent.py"
+        },
+        {
+          "name": "IncompleteSession",
+          "bases": [
+            "ValueError"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "elicitation.py"
+        },
+        {
+          "name": "Observation",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "network.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 9,
+    "statements": 89,
+    "tree_pairs": 6,
+    "cross_root": {
+      "tree_pairs": 0,
+      "statements": 0,
+      "details": {}
+    }
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "batch": 7,
+    "html": 130,
+    "javascript": 61,
+    "json": 14,
+    "markdown": 36,
+    "python": 106,
+    "toml": 1
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "CODEX carries the render pipeline and the session templates; PSYCHE the framework",
+    "CODEX: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "PSYCHE: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Cross-root edges resolved: 0 root pairs with 0 cross-root statements"
+  ],
+  "missing": []
+}

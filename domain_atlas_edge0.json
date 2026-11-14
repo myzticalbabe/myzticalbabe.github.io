@@ -1,0 +1,1473 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:16:59",
+  "domain": "edge0",
+  "label": "EDGE0 \u2014 INTEL",
+  "kind": "code",
+  "declared_roots": [
+    "C:/Users/clint/edge0-intel"
+  ],
+  "declared_files": [],
+  "totals": {
+    "modules": 139,
+    "lines": 25972,
+    "classes": 135,
+    "funcs": 0,
+    "methods": 430,
+    "public_api": 558,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 5,
+    "subpackages": 21,
+    "public_named_classes": 125,
+    "functions": 433,
+    "silence_guards": 12,
+    "entry_points": 36,
+    "parse_failures": 0,
+    "standalone_trees": 5,
+    "standalone_subpackages": 21
+  },
+  "trees": {
+    "edge0-intel._upstream": {
+      "modules": 65,
+      "lines": 10388,
+      "classes": 75,
+      "funcs": 141,
+      "methods": 255,
+      "public_api": 209,
+      "silence": 2,
+      "mains": 11,
+      "hubs": [
+        "inference",
+        "paths"
+      ],
+      "subs": 17,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 2,
+      "shard_remainder": 17
+    },
+    "edge0-intel.models": {
+      "modules": 6,
+      "lines": 7725,
+      "classes": 54,
+      "funcs": 36,
+      "methods": 159,
+      "public_api": 87,
+      "silence": 6,
+      "mains": 0,
+      "hubs": [
+        "inference"
+      ],
+      "subs": 3,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 6
+    },
+    "edge0-intel.scripts": {
+      "modules": 51,
+      "lines": 6245,
+      "classes": 0,
+      "funcs": 125,
+      "methods": 0,
+      "public_api": 125,
+      "silence": 4,
+      "mains": 25,
+      "hubs": [
+        "audit",
+        "inference"
+      ],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 2,
+      "shard_remainder": 3
+    },
+    "edge0-intel.src": {
+      "modules": 7,
+      "lines": 559,
+      "classes": 6,
+      "funcs": 41,
+      "methods": 16,
+      "public_api": 47,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 1,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 7
+    },
+    "edge0-intel.tests": {
+      "modules": 10,
+      "lines": 1055,
+      "classes": 0,
+      "funcs": 90,
+      "methods": 0,
+      "public_api": 90,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [
+        "audit"
+      ],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 10
+    }
+  },
+  "classes": {
+    "total": 135,
+    "public": 80,
+    "by_tree": {
+      "edge0-intel._upstream": [
+        {
+          "name": "StreamingSwitchGLU",
+          "bases": [],
+          "methods": 33,
+          "public_methods": 20,
+          "public": true,
+          "module": "_upstream/src/edge0/streaming/layer.py"
+        },
+        {
+          "name": "Edge0Engine",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 7,
+          "public": true,
+          "module": "_upstream/src/edge0/engine/base.py"
+        },
+        {
+          "name": "Ling8BEngine",
+          "bases": [
+            "Edge0Engine"
+          ],
+          "methods": 11,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/engine/ling.py"
+        },
+        {
+          "name": "PrerouterStager",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/prerouter/stager.py"
+        },
+        {
+          "name": "Model",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "Qwen35Engine",
+          "bases": [
+            "Edge0Engine"
+          ],
+          "methods": 8,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/engine/qwen.py"
+        },
+        {
+          "name": "LingPrerouterStager",
+          "bases": [
+            "PrerouterStager"
+          ],
+          "methods": 7,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/prerouter/stager.py"
+        },
+        {
+          "name": "SafeTensorsStore",
+          "bases": [
+            "TensorStore"
+          ],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/io.py"
+        },
+        {
+          "name": "TextModel",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "CrossTokenStager",
+          "bases": [
+            "PrerouterStager"
+          ],
+          "methods": 6,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/prerouter/stager.py"
+        },
+        {
+          "name": "Model",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "Model",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "SafetensorsMmap",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "_upstream/src/edge0/streaming/mmap.py"
+        },
+        {
+          "name": "SharedExpertCache",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "_upstream/src/edge0/streaming/cache.py"
+        },
+        {
+          "name": "_FakeLayer",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": false,
+          "module": "_upstream/tests/test_prefill_hook.py"
+        },
+        {
+          "name": "ChatSession",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "_upstream/src/edge0/server/chat.py"
+        },
+        {
+          "name": "MoESpec",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 5,
+          "public": true,
+          "module": "_upstream/src/edge0/moe/spec.py"
+        },
+        {
+          "name": "PrefetchBuffer",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "_upstream/src/edge0/streaming/cache.py"
+        },
+        {
+          "name": "_StdlibHandler",
+          "bases": [
+            "BaseHTTPRequestHandler"
+          ],
+          "methods": 5,
+          "public_methods": 3,
+          "public": false,
+          "module": "_upstream/src/edge0/server/app.py"
+        },
+        {
+          "name": "FakeEngine",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "_upstream/tests/test_server.py"
+        },
+        {
+          "name": "FakeTok",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "_upstream/tests/test_server.py"
+        },
+        {
+          "name": "LayerOptions",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "_upstream/src/edge0/streaming/options.py"
+        },
+        {
+          "name": "TensorStore",
+          "bases": [
+            "ABC"
+          ],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/base.py"
+        },
+        {
+          "name": "BailingSparseMoE",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "PlainTok",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "_upstream/tests/test_server.py"
+        },
+        {
+          "name": "PrerouterState",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "_upstream/src/edge0/prerouter/state.py"
+        },
+        {
+          "name": "QueueServer",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "_upstream/src/edge0/server/chat.py"
+        },
+        {
+          "name": "Qwen3NextGatedDeltaNet",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "BailingDecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "BailingGate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "BailingKDA",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "BailingMLA",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "BailingMLP",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "BailingModel",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "BailingPrerouter",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "DecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "GatedDeltaNet",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "LoraLinear",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/adapters/lora.py"
+        },
+        {
+          "name": "ModelArgs",
+          "bases": [
+            "BaseModelArgs"
+          ],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "ModelConfig",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/models/base.py"
+        },
+        {
+          "name": "PausingFakeEngine",
+          "bases": [
+            "FakeEngine"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/tests/test_server.py"
+        },
+        {
+          "name": "PrerouterHead",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/prerouter/heads.py"
+        },
+        {
+          "name": "Qwen3NextAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "Qwen3NextDecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "Qwen3NextMLP",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "Qwen3NextModel",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "Qwen3NextRMSNormGated",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "Qwen3NextSparseMoeBlock",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "Qwen3_5TextModel",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "ShortConv1d",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/bailing_hybrid.py"
+        },
+        {
+          "name": "AttentionSpec",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/attention/spec.py"
+        },
+        {
+          "name": "AutoConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/registry.py"
+        },
+        {
+          "name": "AutoEngine",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/registry.py"
+        },
+        {
+          "name": "AutoModel",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/registry.py"
+        },
+        {
+          "name": "BackendImpl",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/backend.py"
+        },
+        {
+          "name": "GenerationConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/config.py"
+        },
+        {
+          "name": "Ling8BConfig",
+          "bases": [
+            "ModelConfig"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/models/edge0_8b/__init__.py"
+        },
+        {
+          "name": "Model",
+          "bases": [
+            "Qwen3_5Model"
+          ],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5_moe.py"
+        },
+        {
+          "name": "ModelArgs",
+          "bases": [
+            "BaseModelArgs"
+          ],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "ModelArgs",
+          "bases": [
+            "BaseModelArgs"
+          ],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5_moe.py"
+        },
+        {
+          "name": "PrerouterSpec",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "_upstream/src/edge0/prerouter/spec.py"
+        },
+        {
+          "name": "Qwen35Config",
+          "bases": [
+            "ModelConfig"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/models/edge0_35b/__init__.py"
+        },
+        {
+          "name": "TextModelArgs",
+          "bases": [
+            "BaseModelArgs"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_5.py"
+        },
+        {
+          "name": "_FakeBlock",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/tests/test_moe_spec.py"
+        },
+        {
+          "name": "_FakeLayer",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/tests/test_moe_spec.py"
+        },
+        {
+          "name": "_FakeModel",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/tests/test_moe_spec.py"
+        },
+        {
+          "name": "_FakeSwitchMLP",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/tests/test_moe_spec.py"
+        },
+        {
+          "name": "_RegisteredModel",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/registry.py"
+        },
+        {
+          "name": "AttentionKind",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/attention/spec.py"
+        },
+        {
+          "name": "ChatMessage",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/server/chat.py"
+        },
+        {
+          "name": "ChatRequest",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/server/chat.py"
+        },
+        {
+          "name": "ModelArgs",
+          "bases": [
+            "BaseModelArgs"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/backends/mlx/_impl/qwen3_next.py"
+        },
+        {
+          "name": "QuantSpec",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/moe/spec.py"
+        },
+        {
+          "name": "RouterKind",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/moe/spec.py"
+        },
+        {
+          "name": "WeightLayout",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "_upstream/src/edge0/moe/spec.py"
+        }
+      ],
+      "edge0-intel.models": [
+        {
+          "name": "BailingMoeV3SparseMoeBlock",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 13,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3SparseMoeBlock",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 13,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3SparseMoeBlock",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 13,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3ForCausalLM",
+          "bases": [
+            "BailingMoeV3PreTrainedModel",
+            "GenerationMixin"
+          ],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3ForCausalLM",
+          "bases": [
+            "BailingMoeV3PreTrainedModel",
+            "GenerationMixin"
+          ],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3ForCausalLM",
+          "bases": [
+            "BailingMoeV3PreTrainedModel",
+            "GenerationMixin"
+          ],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Gate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Gate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Gate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Model",
+          "bases": [
+            "BailingMoeV3PreTrainedModel"
+          ],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Model",
+          "bases": [
+            "BailingMoeV3PreTrainedModel"
+          ],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Model",
+          "bases": [
+            "BailingMoeV3PreTrainedModel"
+          ],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3RotaryEmbedding",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3RotaryEmbedding",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3RotaryEmbedding",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3DecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3DecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3DecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3GroupRMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3GroupRMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3GroupRMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3KimiDeltaAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3KimiDeltaAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3KimiDeltaAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MLP",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MLP",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MLP",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MTPLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MTPLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MTPLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MultiLatentAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MultiLatentAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3MultiLatentAttention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Pregate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Pregate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Pregate",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3RMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3RMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3RMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "_FusedMoEFunction",
+          "bases": [
+            "torch.autograd.Function"
+          ],
+          "methods": 2,
+          "public_methods": 2,
+          "public": false,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "_FusedMoEFunction",
+          "bases": [
+            "torch.autograd.Function"
+          ],
+          "methods": 2,
+          "public_methods": 2,
+          "public": false,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "_FusedMoEFunction",
+          "bases": [
+            "torch.autograd.Function"
+          ],
+          "methods": 2,
+          "public_methods": 2,
+          "public": false,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Config",
+          "bases": [
+            "PretrainedConfig"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b/configuration_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Config",
+          "bases": [
+            "PretrainedConfig"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-abl-s1.0/configuration_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3Config",
+          "bases": [
+            "PretrainedConfig"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-fp16/configuration_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3PreTrainedModel",
+          "bases": [
+            "PreTrainedModel"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3PreTrainedModel",
+          "bases": [
+            "PreTrainedModel"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "BailingMoeV3PreTrainedModel",
+          "bases": [
+            "PreTrainedModel"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "MoeV3ModelOutputWithPast",
+          "bases": [
+            "MoeModelOutputWithPast"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "MoeV3ModelOutputWithPast",
+          "bases": [
+            "MoeModelOutputWithPast"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "MoeV3ModelOutputWithPast",
+          "bases": [
+            "MoeModelOutputWithPast"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "MoEV3CausalLMOutputWithPast",
+          "bases": [
+            "ModelOutput"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "MoEV3CausalLMOutputWithPast",
+          "bases": [
+            "ModelOutput"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-abl-s1.0/modeling_bailing_moe_v3.py"
+        },
+        {
+          "name": "MoEV3CausalLMOutputWithPast",
+          "bases": [
+            "ModelOutput"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "models/edge0-8b-fp16/modeling_bailing_moe_v3.py"
+        }
+      ],
+      "edge0-intel.src": [
+        {
+          "name": "SafeTensorsStore",
+          "bases": [
+            "TensorStore"
+          ],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "src/edge0/backends/intel/io.py"
+        },
+        {
+          "name": "Linear",
+          "bases": [
+            "Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "src/edge0/backends/intel/nn.py"
+        },
+        {
+          "name": "Module",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "src/edge0/backends/intel/nn.py"
+        },
+        {
+          "name": "RMSNorm",
+          "bases": [
+            "Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "src/edge0/backends/intel/nn.py"
+        },
+        {
+          "name": "random",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "src/edge0/backends/intel/core.py"
+        },
+        {
+          "name": "BackendImpl",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "src/edge0/backends/intel/backend.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "batch": 17,
+    "html": 6,
+    "javascript": 2,
+    "json": 59,
+    "markdown": 77,
+    "python": 139,
+    "toml": 1,
+    "yaml": 1
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "lives outside the repo; the atlas records that so a missing tree is a path fact",
+    "edge0-intel: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Single root domain; cross_root_edges_resolved=True by default"
+  ],
+  "missing": []
+}

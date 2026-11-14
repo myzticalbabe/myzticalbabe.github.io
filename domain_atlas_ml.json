@@ -1,0 +1,986 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:44",
+  "domain": "ml",
+  "label": "ML SHARDS / MODULES",
+  "kind": "code",
+  "declared_roots": [
+    "src/ML",
+    "src/ORCHESTRATION/ml_platforms"
+  ],
+  "declared_files": [],
+  "totals": {
+    "modules": 50,
+    "lines": 17481,
+    "classes": 104,
+    "funcs": 0,
+    "methods": 413,
+    "public_api": 231,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 2,
+    "subpackages": 0,
+    "public_named_classes": 103,
+    "functions": 128,
+    "silence_guards": 84,
+    "entry_points": 33,
+    "parse_failures": 0,
+    "standalone_trees": 0,
+    "standalone_subpackages": 0
+  },
+  "trees": {
+    "ML": {
+      "modules": 9,
+      "lines": 1179,
+      "classes": 9,
+      "funcs": 26,
+      "methods": 25,
+      "public_api": 35,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    },
+    "ml_platforms.improvements": {
+      "modules": 14,
+      "lines": 7442,
+      "classes": 59,
+      "funcs": 16,
+      "methods": 243,
+      "public_api": 74,
+      "silence": 25,
+      "mains": 13,
+      "hubs": [
+        "inference",
+        "paths"
+      ],
+      "subs": 0,
+      "inbound_trees": [
+        "(root)"
+      ],
+      "outbound_trees": [],
+      "standalone": false,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 14
+    }
+  },
+  "classes": {
+    "total": 104,
+    "public": 63,
+    "by_tree": {
+      "ML.(root)": [
+        {
+          "name": "Dual",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 4,
+          "public": true,
+          "module": "autodiff.py"
+        },
+        {
+          "name": "SessionOutcomeLearner",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "gosp.py"
+        },
+        {
+          "name": "NSGA2",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "nsga.py"
+        },
+        {
+          "name": "StepMonitor",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "step_monitor.py"
+        },
+        {
+          "name": "EstimatorSpec",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "estimators.py"
+        },
+        {
+          "name": "AgentGenome",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "nsga_tuner.py"
+        },
+        {
+          "name": "SessionSignature",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "trace_consolidator.py"
+        },
+        {
+          "name": "StepEvent",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "step_monitor.py"
+        },
+        {
+          "name": "Verdict",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "step_monitor.py"
+        }
+      ],
+      "ml_platforms.(root)": [
+        {
+          "name": "MLFrameworkQA",
+          "bases": [],
+          "methods": 25,
+          "public_methods": 12,
+          "public": true,
+          "module": "framework_activator.py"
+        },
+        {
+          "name": "PlatformHealthMonitor",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 7,
+          "public": true,
+          "module": "health_monitor.py"
+        },
+        {
+          "name": "UnifiedInstaller",
+          "bases": [],
+          "methods": 14,
+          "public_methods": 9,
+          "public": true,
+          "module": "install_manager.py"
+        },
+        {
+          "name": "InstallationDebugger",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 10,
+          "public": true,
+          "module": "installation_debug.py"
+        },
+        {
+          "name": "LexiconUpdater",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 9,
+          "public": true,
+          "module": "config.py"
+        },
+        {
+          "name": "GGUFAnalyzer",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 3,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "MLPlatformConfig",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 8,
+          "public": true,
+          "module": "config.py"
+        },
+        {
+          "name": "DeepLearningQAnalyzer",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "verify_moe.py"
+        },
+        {
+          "name": "ConversionLogger",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "LMStudioClient",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "lm_studio_client.py"
+        },
+        {
+          "name": "PyTorchConverter",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 1,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "UniversalConverter",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "FrameworkCompatibilityMatrix",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "verify_moe.py"
+        },
+        {
+          "name": "JAXConverter",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 1,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "OllamaClient",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "lm_studio_client.py"
+        },
+        {
+          "name": "TensorFlowConverter",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 1,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "ONNXConverter",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "CompatibilityChecker",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "installation_debug.py"
+        },
+        {
+          "name": "Alert",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "health_monitor.py"
+        },
+        {
+          "name": "Answer",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "framework_activator.py"
+        },
+        {
+          "name": "ChatMessage",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "lm_studio_client.py"
+        },
+        {
+          "name": "CompatibilityRule",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "install_manager.py"
+        },
+        {
+          "name": "ConversionResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "ConversionStep",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "Framework",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "framework_activator.py"
+        },
+        {
+          "name": "HealthCheck",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "health_monitor.py"
+        },
+        {
+          "name": "HealthStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "health_monitor.py"
+        },
+        {
+          "name": "InstallRecord",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "install_manager.py"
+        },
+        {
+          "name": "InstallStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "install_manager.py"
+        },
+        {
+          "name": "InstallationStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "installation_debug.py"
+        },
+        {
+          "name": "LogLevel",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "ModelInfo",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "lm_studio_client.py"
+        },
+        {
+          "name": "ModelMetadata",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "universal_converter.py"
+        },
+        {
+          "name": "PackageInfo",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "installation_debug.py"
+        },
+        {
+          "name": "QState",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "framework_activator.py"
+        },
+        {
+          "name": "QuestionType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "framework_activator.py"
+        }
+      ],
+      "ml_platforms.improvements": [
+        {
+          "name": "WeaknessTester",
+          "bases": [],
+          "methods": 21,
+          "public_methods": 20,
+          "public": true,
+          "module": "improvements/weakness_testing.py"
+        },
+        {
+          "name": "EnhancedQLearningTable",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 13,
+          "public": true,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "DeepLearningQLearning",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 11,
+          "public": true,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "FrameworkState",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 7,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "DocumentationQLearning",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 8,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "MLflowLogger",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 8,
+          "public": true,
+          "module": "improvements/mlflow_integration.py"
+        },
+        {
+          "name": "AdaptivePlatformSelector",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "AzazaelIntelligence",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "improvements/strategic_intelligence.py"
+        },
+        {
+          "name": "DLQTable",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "ExtendedQLearningTable",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "MetricsTracker",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "improvements/metrics_tracker.py"
+        },
+        {
+          "name": "MultiAgentQLearning",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 5,
+          "public": true,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "SumTree",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "ExperienceReplayBuffer",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "NeuralPredictor",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/qualitative_improvements.py"
+        },
+        {
+          "name": "ONNXExporter",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 6,
+          "public": true,
+          "module": "improvements/onnx_integration.py"
+        },
+        {
+          "name": "OpenVINOInference",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "improvements/onnx_integration.py"
+        },
+        {
+          "name": "PrioritizedReplay",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "SuccessRateTracker",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "improvements/metrics_tracker.py"
+        },
+        {
+          "name": "ExperienceReplay",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "RayIntegration",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "improvements/ray_integration.py"
+        },
+        {
+          "name": "TensorConverter",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 5,
+          "public": true,
+          "module": "improvements/tensor_utils.py"
+        },
+        {
+          "name": "AnomalyDetector",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/qualitative_improvements.py"
+        },
+        {
+          "name": "AzazaelIntelligenceHardened",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/weakness_testing.py"
+        },
+        {
+          "name": "ContextAwareScheduler",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/qualitative_improvements.py"
+        },
+        {
+          "name": "DocumentationImprover",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "FrameworkGroups",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "HyperparameterTuner",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "PerformanceBenchmark",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "improvements/metrics_tracker.py"
+        },
+        {
+          "name": "SmartCache",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/strategic_intelligence.py"
+        },
+        {
+          "name": "TargetNetwork",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "MemoryManager",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "improvements/qualitative_improvements.py"
+        },
+        {
+          "name": "PerformanceProfiler",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "improvements/strategic_intelligence.py"
+        },
+        {
+          "name": "VectorizationUtils",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "improvements/vectorize_utils.py"
+        },
+        {
+          "name": "EnsembleRecommender",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "improvements/qualitative_improvements.py"
+        },
+        {
+          "name": "IntegrationPathways",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "SuccessiveComputation",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "TestSuite",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "improvements/weakness_testing.py"
+        },
+        {
+          "name": "_GenericModelWrapper",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": false,
+          "module": "improvements/mlflow_integration.py"
+        },
+        {
+          "name": "AutoDocumentation",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "improvements/strategic_intelligence.py"
+        },
+        {
+          "name": "DLTransition",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "IntegrationRecommendation",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "DLFramework",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "DLTaskType",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "DocAction",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "DocState",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "FrameworkInfo",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "FrameworkType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "HardwareType",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/deep_learning_qlearning.py"
+        },
+        {
+          "name": "MetricEntry",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/metrics_tracker.py"
+        },
+        {
+          "name": "PerformanceMetrics",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/metrics_tracker.py"
+        },
+        {
+          "name": "PerformanceMetrics",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/qualitative_improvements.py"
+        },
+        {
+          "name": "TaskType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "TaskType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/ml_integration.py"
+        },
+        {
+          "name": "TaskType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "TestResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/weakness_testing.py"
+        },
+        {
+          "name": "Transition",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/enhanced_qlearning.py"
+        },
+        {
+          "name": "Transition",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/qlearning_table.py"
+        },
+        {
+          "name": "WorkflowEvent",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "improvements/strategic_intelligence.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 1,
+    "statements": 6,
+    "tree_pairs": 1,
+    "cross_root": {
+      "tree_pairs": 0,
+      "statements": 0,
+      "details": {}
+    }
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "markdown": 23,
+    "python": 50
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "platform library and the ML modules are separate roots by design",
+    "ML: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "ml_platforms: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Cross-root edges resolved: 0 root pairs with 0 cross-root statements"
+  ],
+  "missing": []
+}

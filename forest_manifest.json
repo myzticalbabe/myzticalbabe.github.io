@@ -1,0 +1,185 @@
+{
+  "schema": "azazael.forest_manifest/1",
+  "generated_at": "2026-11-14T10:17:31",
+  "domains": [
+    "cain",
+    "dev",
+    "edge0",
+    "eve_rani",
+    "gosp",
+    "hives",
+    "ml",
+    "oxman",
+    "sentinel",
+    "shards",
+    "wraith"
+  ],
+  "trees": [
+    {
+      "name": "cain",
+      "label": "CAIN \u2014 PSYCHOANALYSIS + RENDER",
+      "atlas": "domain_atlas_cain.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#0b0609",
+        "trunk": "#e05a3c",
+        "leaf": "#ffd166",
+        "text": "#fdeee8",
+        "dim": "#a08579"
+      },
+      "emblem": "",
+      "note": "CODEX carries the render pipeline and the session templates; PSYCHE the framework"
+    },
+    {
+      "name": "dev",
+      "label": "DEV \u2014 DEEP-LEARNING STACKS, ALL ENVIRONMENTS",
+      "atlas": "domain_atlas_dev.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#06070b",
+        "trunk": "#39d3c3",
+        "leaf": "#7fd1ff",
+        "text": "#e9f1ff",
+        "dim": "#7b8aa3"
+      },
+      "emblem": "",
+      "note": "oneAPI/XPU is Windows-only (torch +xpu, triton-xpu, intel sycl); Ubuntu torch is +cpu; Kali has no framework. Versions from dist-info"
+    },
+    {
+      "name": "edge0",
+      "label": "EDGE0 \u2014 INTEL",
+      "atlas": "domain_atlas_edge0.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#06080d",
+        "trunk": "#e05a3c",
+        "leaf": "#7fb0ff",
+        "text": "#e9f1ff",
+        "dim": "#78859b"
+      },
+      "emblem": "kali-dragon-icon.svg",
+      "note": "lives outside the repo; the atlas records that so a missing tree is a path fact"
+    },
+    {
+      "name": "eve_rani",
+      "label": "EVE / RANI \u2014 NATIVE INTELLIGENCE ARTIFACTS",
+      "atlas": "domain_atlas_eve_rani.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#060a10",
+        "trunk": "#7aa2f7",
+        "leaf": "#9ece6a",
+        "text": "#e9f1ff",
+        "dim": "#7b8aa3"
+      },
+      "emblem": "",
+      "note": "RANI evidence lives beside the repo (RANI_LLM_evidence.json); artifacts are counted, not invented. GOSP_RANI_INTEGRATION_evidence.json not found on disk."
+    },
+    {
+      "name": "gosp",
+      "label": "GOSP \u2014 CLI + PARITY",
+      "atlas": "domain_atlas_gosp.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#080a06",
+        "trunk": "#9ece6a",
+        "leaf": "#e0af68",
+        "text": "#f2fff0",
+        "dim": "#86977c"
+      },
+      "emblem": "",
+      "note": "GOSP is three scripts plus evidence dirs; a code-only census would report it as absent"
+    },
+    {
+      "name": "hives",
+      "label": "SWARM HIVES",
+      "atlas": "domain_atlas_hives.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#0a0806",
+        "trunk": "#c9a227",
+        "leaf": "#f2c14e",
+        "text": "#fdf6e3",
+        "dim": "#9b8f6f"
+      },
+      "emblem": "",
+      "note": "one hive per worm category; registry counted separately because registration is not housing"
+    },
+    {
+      "name": "ml",
+      "label": "ML SHARDS / MODULES",
+      "atlas": "domain_atlas_ml.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#08060c",
+        "trunk": "#b07ce8",
+        "leaf": "#7fd1ff",
+        "text": "#f0ecff",
+        "dim": "#8b82a8"
+      },
+      "emblem": "",
+      "note": "platform library and the ML modules are separate roots by design"
+    },
+    {
+      "name": "oxman",
+      "label": "HEADLESS OXMAN \u2014 RENDER CHARACTER",
+      "atlas": "domain_atlas_oxman.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#0a0806",
+        "trunk": "#8b5a2b",
+        "leaf": "#d4a574",
+        "text": "#fdf6e3",
+        "dim": "#a89078"
+      },
+      "emblem": "",
+      "note": "Character assets, ComfyUI prompts, Blender rig, animation keys for Headless Oxman"
+    },
+    {
+      "name": "sentinel",
+      "label": "SENTINEL \u2014 RULES DEV",
+      "atlas": "domain_atlas_sentinel.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#07050d",
+        "trunk": "#39d3c3",
+        "leaf": "#f2c14e",
+        "text": "#e8fbf8",
+        "dim": "#7f9a96"
+      },
+      "emblem": "",
+      "note": "half gate code, half canon: a rules tree must show both or it hides where a rule lives"
+    },
+    {
+      "name": "shards",
+      "label": "SHARD REPOSITORY",
+      "atlas": "domain_atlas_shards.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#070c0a",
+        "trunk": "#39d3c3",
+        "leaf": "#f2c14e",
+        "text": "#eafff8",
+        "dim": "#7f9a96"
+      },
+      "emblem": "",
+      "note": "code shards and skill shards are counted separately: a skill is a directory holding SKILL.md"
+    },
+    {
+      "name": "wraith",
+      "label": "LILITH'S WRAITH \u2014 RENDER CHARACTER",
+      "atlas": "domain_atlas_wraith.json",
+      "top_trees": 8,
+      "palette": {
+        "bg": "#060a10",
+        "trunk": "#4a1a4a",
+        "leaf": "#c084c0",
+        "text": "#f0e0f0",
+        "dim": "#8a6a8a"
+      },
+      "emblem": "",
+      "note": "Character assets, ComfyUI prompts, Blender rig, animation keys for Lilith's Wraith"
+    }
+  ],
+  "note": "one descriptor per domain; render_tree.py draws any of them from its atlas without a code change"
+}

@@ -1,0 +1,150 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:44",
+  "domain": "gosp",
+  "label": "GOSP \u2014 CLI + PARITY",
+  "kind": "mixed",
+  "declared_roots": [],
+  "declared_files": [
+    "src/ML/gosp.py",
+    "scripts/gosp_parity_check.py",
+    "scripts/gosp_rani_integration.py"
+  ],
+  "totals": {
+    "modules": 3,
+    "lines": 357,
+    "classes": 1,
+    "funcs": 6,
+    "methods": 5,
+    "public_api": 1,
+    "silence": 0,
+    "mains": 2,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 4
+  },
+  "trees": {
+    "gosp": {
+      "modules": 1,
+      "lines": 91,
+      "classes": 1,
+      "funcs": 1,
+      "methods": 5,
+      "public_api": 1,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "gosp_parity_check": {
+      "modules": 1,
+      "lines": 124,
+      "classes": 0,
+      "funcs": 2,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "gosp_rani_integration": {
+      "modules": 1,
+      "lines": 142,
+      "classes": 0,
+      "funcs": 3,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "evidence_gosp_cli_run": {
+      "modules": 2,
+      "lines": 0,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "evidence"
+    }
+  },
+  "classes": {
+    "total": 1,
+    "public": 1,
+    "by_tree": {}
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {
+    "C:/Users/clint/gosp_cli_run": {
+      "files": 2,
+      "bytes": 2353
+    }
+  },
+  "languages": {
+    "python": 3
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "GOSP is three scripts plus evidence dirs; a code-only census would report it as absent",
+    "Single root domain; cross_root_edges_resolved=True by default"
+  ],
+  "missing": [
+    "C:\\Users\\clint\\gosp_parity"
+  ]
+}

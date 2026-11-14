@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>YGGDRASIL — FOREST INDEX</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body { background: radial-gradient(1200px 700px at 22% 0%, #0b1220 0%, #05070d 62%);
+         color: #e8eefc; font-family: "Cascadia Mono", Consolas, monospace; }
+  #wrap { position: absolute; inset: 0; padding: 42px 56px; }
+  h1 { font-size: 34px; letter-spacing: 3px; font-weight: 700; }
+  h1 em { color: #7df9ff; font-style: normal; }
+  .sub { color: #7b86a4; font-size: 13px; margin-top: 8px; letter-spacing: 1px; }
+  .grid { display: grid; grid-template-columns: 1180px 1fr; gap: 34px; margin-top: 26px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th { text-align: left; color: #7b86a4; font-weight: 500; font-size: 11px;
+       letter-spacing: 1.4px; text-transform: uppercase; padding: 0 0 8px; }
+  tbody tr { border-top: 1px solid rgba(120,140,180,.16); opacity: 0; transform: translateX(-14px); }
+  td { padding: 15px 0; vertical-align: middle; }
+  tbody tr:first-child td { padding-top: 8px; }
+  td.nm { width: 132px; color: #cfe3ff; font-weight: 700; }
+  td.bar { width: 190px; padding-right: 14px; }
+  td.bar i { display: block; height: 7px; border-radius: 4px;
+             background: linear-gradient(90deg, #39d3c3, #7df9ff); }
+  td.num { width: 84px; color: #e8eefc; }
+  td.lang { width: 150px; color: #9fb3d1; font-size: 11px; }
+  td.prov { color: #6f7d99; font-size: 11px; }
+  td.clip { width: 84px; color: #9ece6a; font-size: 11px; }
+  .warn { color: #ffb15e; }
+  h2 { font-size: 12px; letter-spacing: 1.6px; color: #7df9ff;
+       text-transform: uppercase; margin: 0 0 10px; }
+  ul.tiers { list-style: none; }
+  ul.tiers li { display: flex; gap: 12px; padding: 6px 0; font-size: 12px;
+                border-bottom: 1px solid rgba(120,140,180,.12); opacity: 0; }
+  ul.tiers b { width: 34px; color: #ffd479; text-align: right; }
+  ul.tiers span { color: #a9b8d2; }
+  .kv { font-size: 12px; color: #a9b8d2; line-height: 1.7; opacity: 0; }
+  .kv b { color: #e8eefc; }
+  .card { background: rgba(14,20,34,.72); border: 1px solid rgba(120,140,180,.18);
+          border-radius: 10px; padding: 18px 20px; }
+  .card + .card { margin-top: 18px; }
+  table.plan { font-size: 12px; }
+  table.plan td, table.plan th { padding: 4px 0; }
+  .dim { color: #6f7d99; font-size: 12px; }
+  footer { position: absolute; left: 56px; right: 56px; bottom: 26px;
+           color: #5f6c86; font-size: 11px; letter-spacing: .6px;
+           display: flex; justify-content: space-between; opacity: 0; }
+  code { color: #7df9ff; }
+</style></head>
+<body><div id="wrap">
+  <h1>YGGDRASIL · <em>FOREST INDEX</em></h1>    <div class="sub">11 domains · 11 with an atlas · 583 modules ·
+    code census 2026-11-09T13:27:33+00:00 · index built 2026-11-14T12:40:30
+    </div>
+
+  <div class="grid">
+    <div>
+      <table>
+        <thead><tr><th>domain</th><th></th><th>modules</th><th>lines</th>
+          <th>classes</th><th>languages</th><th>drawn from</th><th>clip</th></tr></thead>
+        <tbody><tr style="--d:0ms"><td class="nm">hives</td><td class="bar"><i style="width:100.0%"></i></td><td class="num">152</td><td class="num">74,895</td><td class="num">417</td><td class="lang">json 1, py 152</td><td class="prov">domain_atlas_hives.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:260ms"><td class="nm">edge0</td><td class="bar"><i style="width:95.6%"></i></td><td class="num">139</td><td class="num">25,972</td><td class="num">135</td><td class="lang">bat 17, html 6, js 2, json 59, mark 77, py 139, toml 1, yaml 1</td><td class="prov">domain_atlas_edge0.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:520ms"><td class="nm">cain</td><td class="bar"><i style="width:83.5%"></i></td><td class="num">106</td><td class="num">41,697</td><td class="num">70</td><td class="lang">bat 7, html 130, js 61, json 14, mark 36, py 106, toml 1</td><td class="prov">domain_atlas_cain.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:780ms"><td class="nm">eve_rani</td><td class="bar"><i style="width:67.9%"></i></td><td class="num">70</td><td class="num">17,317</td><td class="num">77</td><td class="lang">cyth 2, py 70</td><td class="prov">domain_atlas_eve_rani.json <span class="warn">1 missing</span></td><td class="clip">no clip</td></tr>
+<tr style="--d:1040ms"><td class="nm">sentinel</td><td class="bar"><i style="width:57.4%"></i></td><td class="num">50</td><td class="num">40,163</td><td class="num">42</td><td class="lang">bat 6, html 4, json 1, ps1 14, py 50, sh 1, mark 1</td><td class="prov">domain_atlas_sentinel.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:1300ms"><td class="nm">ml</td><td class="bar"><i style="width:57.4%"></i></td><td class="num">50</td><td class="num">17,481</td><td class="num">104</td><td class="lang">mark 23, py 50</td><td class="prov">domain_atlas_ml.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:1560ms"><td class="nm">shards</td><td class="bar"><i style="width:18.1%"></i></td><td class="num">5</td><td class="num">1,506</td><td class="num">10</td><td class="lang">json 2, py 5</td><td class="prov">domain_atlas_shards.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:1820ms"><td class="nm">wraith</td><td class="bar"><i style="width:16.2%"></i></td><td class="num">4</td><td class="num">248</td><td class="num">0</td><td class="lang">py 4</td><td class="prov">domain_atlas_wraith.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:2080ms"><td class="nm">oxman</td><td class="bar"><i style="width:16.2%"></i></td><td class="num">4</td><td class="num">247</td><td class="num">0</td><td class="lang">py 4</td><td class="prov">domain_atlas_oxman.json </td><td class="clip">no clip</td></tr>
+<tr style="--d:2340ms"><td class="nm">gosp</td><td class="bar"><i style="width:14.0%"></i></td><td class="num">3</td><td class="num">357</td><td class="num">1</td><td class="lang">py 3</td><td class="prov">domain_atlas_gosp.json <span class="warn">1 missing</span></td><td class="clip">no clip</td></tr>
+<tr style="--d:2600ms"><td class="nm">dev</td><td class="bar"><i style="width:0.0%"></i></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="lang">dist-info only</td><td class="prov">domain_atlas_dev.json <span class="warn">1 missing</span></td><td class="clip">no clip</td></tr></tbody>
+      </table>
+      <div class="card" style="margin-top:22px">
+        <h2>what each column is · the universe of every number</h2>
+        <table class="plan" style="font-size:12px">
+          <tr><td class="nm">modules</td><td>python by AST, every other language by
+            file. <span class="warn">counted is not analysed</span></td></tr>
+          <tr><td class="nm">classes</td><td>python AST only — 0 in a domain whose
+            modules are JS/shell is a missing instrument, not an empty tree</td></tr>
+          <tr><td class="nm">bar</td><td>width = √modules, so a 4-module limb is
+            visible beside dev's 58,511</td></tr>
+          <tr><td class="nm">dev</td><td>declared <code>kind: stacks</code>: read
+            from dist-info metadata (781 win / 206 ubuntu / 1,001 kali), no source walk</td></tr>
+          <tr><td class="nm">drawn from</td><td>the atlas file that produced the row;
+            regenerate when <code>STALE</code> shows</td></tr>
+        </table>
+      </div>
+      <p class="dim" style="margin-top:16px">each row names the atlas it was
+      measured from; a domain figure is not a measurement of an environment.</p>
+    </div>
+    <div>
+      <div class="card"><h2>cleave ladder · src/</h2><ul class="tiers"><li><b>9</b><span>A · clean python cut</span></li>
+<li><b>5</b><span>A-mixed · other languages unaudited</span></li>
+<li><b>0</b><span>A-cross · referenced from another language</span></li>
+<li><b>11</b><span>B · needs a shim</span></li>
+<li><b>0</b><span>C · cycle-blocked</span></li>
+<li><b>1</b><span>D · stub, not a cleave</span></li></ul></div>
+      <div class="card"><h2>shard plan · limb-aligned</h2>
+        <table class="plan"><tr><th>language</th><th>modules</th><th>shards</th><th>underfilled</th><th>straddle*</th></tr>
+<tr><td class="nm">batch</td><td class="num">59</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">c</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">cython</td><td class="num">2</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">html</td><td class="num">145</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">javascript</td><td class="num">74</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">powershell</td><td class="num">15</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">python</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">rust</td><td class="num">4</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">shell</td><td class="num">13</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">typescript</td><td class="num">10</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr></table>
+        <p class="dim" style="margin-top:8px">10 shards ·
+        0 straddling · 0 slots unused<br>
+        *straddle = shards from the naive global 24-chunk that span two trees</p>
+      </div>
+      <div class="card"><h2>language graphs · resolved, not asserted</h2>
+        <table class="plan"><tr><th>graph</th><th>files</th><th>edges</th><th>tree pairs</th><th>external</th><th>unresolved</th><th>weak</th></tr>
+<tr><td class="nm">python</td><td class="num">867</td><td class="num">2177</td><td class="num">36</td><td class="num">0</td><td class="num">5895</td><td class="num">0</td></tr>
+<tr><td class="nm">javascript</td><td class="num">84</td><td class="num">3</td><td class="num">0</td><td class="num">151</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">shell</td><td class="num">87</td><td class="num">119</td><td class="num">6</td><td class="num">0</td><td class="num">25</td><td class="num">0</td></tr>
+<tr><td class="nm">html</td><td class="num">145</td><td class="num">0†</td><td class="num">0</td><td class="num">4</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td class="nm">rust</td><td class="num">4</td><td class="num">0†</td><td class="num">0</td><td class="num">7</td><td class="num">0</td><td class="num">0</td></tr></table>
+        <div class="kv" style="margin-top:8px">cross-language <b>122</b> resolved ·
+          <b>25</b> unresolved<br>
+          evidence exact <b>12</b> · variable <b>1</b> · periphery <b>4</b> · tail <b>2</b><br>
+          † no internal edges: every reference is an external package<br>
+          code counted <b>html 145 · javascript 74 · batch 59 · powershell 15 · shell 13 · typescript 10 · rust 4 · cython 2 · c 1 · python 1</b><br>
+          aliases 13 declared · 13 used · liftable 103/137 (34 blocked)<br>
+          unresolved budget 25 of 27</div>
+      </div>
+    </div>
+  </div>
+
+  <footer><span>separate deliverable — environment clips (WINDOWS / UBUNTU / KALI)
+    and domain clips are never merged; see DOMAIN_INDEX.md</span>
+    <span>tools/build_forest_index.py</span></footer>
+</div>
+<script>
+window.__TOTAL = 9000;
+const D = 9000;
+const ease = t => 1 - Math.pow(1 - t, 3);
+window.__draw = function (t) {
+  const rows = document.querySelectorAll('tbody tr');
+  rows.forEach((el, i) => {
+    const d = i * 260;
+    const g = ease(Math.max(0, Math.min(1, (t - d) / 620)));
+    el.style.opacity = g;
+    el.style.transform = 'translateX(' + (-14 * (1 - g)).toFixed(2) + 'px)';
+  });
+  const li = document.querySelectorAll('ul.tiers li');
+  li.forEach((el, i) => {
+    const g = ease(Math.max(0, Math.min(1, (t - 900 - i * 150) / 500)));
+    el.style.opacity = g;
+  });
+  document.querySelectorAll('.kv').forEach((el, i) => {
+    const g = ease(Math.max(0, Math.min(1, (t - 1800 - i * 220) / 600)));
+    el.style.opacity = g;
+  });
+  const f = document.querySelector('footer');
+  f.style.opacity = ease(Math.max(0, Math.min(1, (t - D + 1400) / 700)));
+};
+window.__draw(0);
+</script>
+</body></html>

@@ -1,0 +1,764 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:43",
+  "domain": "eve_rani",
+  "label": "EVE / RANI \u2014 NATIVE INTELLIGENCE ARTIFACTS",
+  "kind": "code",
+  "declared_roots": [
+    "src/eve_unleashed"
+  ],
+  "declared_files": [
+    "src/ML/gosp.py",
+    "C:/Users/clint/RANI_LLM_evidence.json"
+  ],
+  "totals": {
+    "modules": 70,
+    "lines": 17317,
+    "classes": 77,
+    "funcs": 1,
+    "methods": 332,
+    "public_api": 358,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 2,
+    "subpackages": 0,
+    "public_named_classes": 76,
+    "functions": 281,
+    "silence_guards": 46,
+    "entry_points": 6,
+    "parse_failures": 0,
+    "standalone_trees": 1,
+    "standalone_subpackages": 0
+  },
+  "trees": {
+    "eve_unleashed.models": {
+      "modules": 2,
+      "lines": 502,
+      "classes": 8,
+      "funcs": 3,
+      "methods": 17,
+      "public_api": 11,
+      "silence": 2,
+      "mains": 0,
+      "hubs": [
+        "inference"
+      ],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 2
+    },
+    "gosp": {
+      "modules": 1,
+      "lines": 91,
+      "classes": 1,
+      "funcs": 1,
+      "methods": 5,
+      "public_api": 1,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    }
+  },
+  "classes": {
+    "total": 77,
+    "public": 57,
+    "by_tree": {
+      "eve_unleashed.(root)": [
+        {
+          "name": "InferenceEngine",
+          "bases": [],
+          "methods": 24,
+          "public_methods": 13,
+          "public": true,
+          "module": "engine.py"
+        },
+        {
+          "name": "EveInterpreterBridge",
+          "bases": [],
+          "methods": 18,
+          "public_methods": 8,
+          "public": true,
+          "module": "interpreter_bridge.py"
+        },
+        {
+          "name": "AutonomousDecisionEngine",
+          "bases": [],
+          "methods": 17,
+          "public_methods": 13,
+          "public": true,
+          "module": "decision_engine.py"
+        },
+        {
+          "name": "ModelRegistry",
+          "bases": [],
+          "methods": 17,
+          "public_methods": 14,
+          "public": true,
+          "module": "model_registry.py"
+        },
+        {
+          "name": "LlamaServerManager",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 6,
+          "public": true,
+          "module": "service_manager.py"
+        },
+        {
+          "name": "TerenceV2",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 6,
+          "public": true,
+          "module": "terence_v2.py"
+        },
+        {
+          "name": "EvolutionaryWormManager",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 4,
+          "public": true,
+          "module": "self_modifying_worms.py"
+        },
+        {
+          "name": "IntrospectionLoop",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 4,
+          "public": true,
+          "module": "consciousness.py"
+        },
+        {
+          "name": "SwarmStore",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 7,
+          "public": true,
+          "module": "dodeca_recall.py"
+        },
+        {
+          "name": "FusedPair",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 6,
+          "public": true,
+          "module": "mcml_gpu.py"
+        },
+        {
+          "name": "PredictiveWorm",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 4,
+          "public": true,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "GeneticAlgorithm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 5,
+          "public": true,
+          "module": "self_modifying_worms.py"
+        },
+        {
+          "name": "GpuDense",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "mcml_gpu.py"
+        },
+        {
+          "name": "HybridDense",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "mcml_gpu.py"
+        },
+        {
+          "name": "ModelLoader",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "core.py"
+        },
+        {
+          "name": "PamSEvolution",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 5,
+          "public": true,
+          "module": "pams_evolution.py"
+        },
+        {
+          "name": "InferenceCache",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "cache.py"
+        },
+        {
+          "name": "ShapeStore",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "dodeca_recall.py"
+        },
+        {
+          "name": "GoalSetting",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "consciousness.py"
+        },
+        {
+          "name": "ModelRouter",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "model_router.py"
+        },
+        {
+          "name": "Sequential",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "mcml.py"
+        },
+        {
+          "name": "Activate",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "mcml.py"
+        },
+        {
+          "name": "Dense",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "mcml.py"
+        },
+        {
+          "name": "DynamicHypergraph",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "adaptive_hyperedge.py"
+        },
+        {
+          "name": "Reflection",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 2,
+          "public": true,
+          "module": "consciousness.py"
+        },
+        {
+          "name": "SelfModel",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 5,
+          "public": true,
+          "module": "consciousness.py"
+        },
+        {
+          "name": "WormDNA",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "self_modifying_worms.py"
+        },
+        {
+          "name": "EveConfig",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "config.py"
+        },
+        {
+          "name": "IntentParser",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 1,
+          "public": true,
+          "module": "nl_interface.py"
+        },
+        {
+          "name": "NetGenome",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "net_genome.py"
+        },
+        {
+          "name": "ShapeGraph",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "shapes.py"
+        },
+        {
+          "name": "FlexibleHyperedge",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "adaptive_hyperedge.py"
+        },
+        {
+          "name": "HeterophilyAware",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "adaptive_hyperedge.py"
+        },
+        {
+          "name": "LillithTuner",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "trainer.py"
+        },
+        {
+          "name": "MultiScaleHypergraph",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "adaptive_hyperedge.py"
+        },
+        {
+          "name": "OpenCLContext",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "mcml_gpu.py"
+        },
+        {
+          "name": "StreamResult",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "streaming.py"
+        },
+        {
+          "name": "ConversationalKLINK",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "nl_interface.py"
+        },
+        {
+          "name": "LiveState",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "live_morph.py"
+        },
+        {
+          "name": "ModelRecord",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "model_registry.py"
+        },
+        {
+          "name": "NETWORXZ",
+          "bases": [
+            "PredictiveWorm"
+          ],
+          "methods": 2,
+          "public_methods": 0,
+          "public": false,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "NarrativeReport",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "nl_interface.py"
+        },
+        {
+          "name": "NetFitness",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "net_genome.py"
+        },
+        {
+          "name": "NetGA",
+          "bases": [
+            "GeneticAlgorithm"
+          ],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "net_genome.py"
+        },
+        {
+          "name": "ProactiveSuggestions",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "nl_interface.py"
+        },
+        {
+          "name": "TaskAdaptiveTopology",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "adaptive_hyperedge.py"
+        },
+        {
+          "name": "WormFitness",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "self_modifying_worms.py"
+        },
+        {
+          "name": "CLOCKZ",
+          "bases": [
+            "PredictiveWorm"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "DISKZ",
+          "bases": [
+            "PredictiveWorm"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "Decision",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "decision_engine.py"
+        },
+        {
+          "name": "DodecaStore",
+          "bases": [
+            "ShapeStore"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "dodeca_recall.py"
+        },
+        {
+          "name": "Forecast",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "PROCESSZ",
+          "bases": [
+            "PredictiveWorm"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "SYSTEMZ",
+          "bases": [
+            "PredictiveWorm"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "predictive_worms.py"
+        },
+        {
+          "name": "StreamToken",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "streaming.py"
+        },
+        {
+          "name": "AutonomyLevel",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "decision_engine.py"
+        },
+        {
+          "name": "BatchResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "core.py"
+        },
+        {
+          "name": "ComponentModel",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "consciousness.py"
+        },
+        {
+          "name": "DecisionStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "decision_engine.py"
+        },
+        {
+          "name": "FixProposal",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "terence_v2.py"
+        },
+        {
+          "name": "HealStats",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "terence_v2.py"
+        },
+        {
+          "name": "ImprovementGoal",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "consciousness.py"
+        },
+        {
+          "name": "InferenceResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "core.py"
+        },
+        {
+          "name": "Intent",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "nl_interface.py"
+        },
+        {
+          "name": "MemoryImportance",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "pams_evolution.py"
+        },
+        {
+          "name": "RouteDecision",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "model_router.py"
+        },
+        {
+          "name": "Suggestion",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "nl_interface.py"
+        },
+        {
+          "name": "TrainConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "trainer.py"
+        }
+      ],
+      "eve_unleashed.models": [
+        {
+          "name": "Qwen35ForCausalLM",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "Qwen35SSM",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "Qwen35Attention",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "Qwen35DecoderLayer",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "Qwen35MLP",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "RMSNorm",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "RotaryEmbedding",
+          "bases": [
+            "nn.Module"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        },
+        {
+          "name": "Qwen35SSMConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "models/qwen35_ssm.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "cython": 2,
+    "python": 70
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "RANI evidence lives beside the repo (RANI_LLM_evidence.json); artifacts are counted, not invented. GOSP_RANI_INTEGRATION_evidence.json not found on disk.",
+    "eve_unleashed: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Single root domain; cross_root_edges_resolved=True by default"
+  ],
+  "missing": [
+    "C:\\Users\\clint\\RANI_LLM_evidence.json"
+  ]
+}
