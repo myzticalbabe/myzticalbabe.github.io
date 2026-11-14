@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azazael Domain Atlas — Interactive Explorer</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
+    .header { position: sticky; top: 0; background: rgba(13,17,23,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #30363d; padding: 1rem 2rem; z-index: 100; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .header h1 { font-size: 1.5rem; background: linear-gradient(135deg, #58a6ff, #a371f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .controls { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+    .search-box { padding: 0.5rem 1rem; background: #161b22; border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; font-size: 0.875rem; min-width: 250px; }
+    .search-box:focus { outline: none; border-color: #58a6ff; }
+    .btn { padding: 0.5rem 1rem; background: #238636; color: white; border: none; border-radius: 6px; font-size: 0.875rem; cursor: pointer; transition: background 0.2s; text-decoration: none; }
+    .btn:hover { background: #2ea043; }
+    .btn-secondary { background: #30363d; }
+    .btn-secondary:hover { background: #484f58; }
+    .main { display: grid; grid-template-columns: 320px 1fr; min-height: calc(100vh - 80px); }
+    .sidebar { background: #161b22; border-right: 1px solid #30363d; padding: 1.5rem; overflow-y: auto; position: sticky; top: 80px; height: calc(100vh - 80px); }
+    .sidebar h2 { color: #58a6ff; margin-bottom: 1rem; font-size: 1rem; }
+    .domain-list { list-style: none; }
+    .domain-item { padding: 0.75rem; background: #0d1117; border: 1px solid #30363d; border-radius: 6px; margin-bottom: 0.5rem; cursor: pointer; transition: all 0.2s; }
+    .domain-item:hover { border-color: #58a6ff; transform: translateX(4px); }
+    .domain-item.active { border-color: #a371f7; background: rgba(163,113,247,0.1); }
+    .domain-name { font-weight: 600; color: #c9d1d9; }
+    .domain-meta { display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap; font-size: 0.75rem; }
+    .tag { background: #21262d; padding: 0.125rem 0.5rem; border-radius: 4px; color: #8b949e; }
+    .tag strong { color: #c9d1d9; }
+    .canvas-container { position: relative; background: #0d1117; }
+    #graph { width: 100%; height: 100vh; display: block; }
+    .tooltip { position: absolute; pointer-events: none; background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; font-size: 0.875rem; max-width: 300px; z-index: 1000; opacity: 0; transition: opacity 0.2s; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    .tooltip.visible { opacity: 1; }
+    .tooltip h3 { color: #58a6ff; margin-bottom: 0.5rem; }
+    .tooltip .stats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0; }
+    .legend { position: absolute; bottom: 1rem; left: 1rem; background: rgba(22,27,34,0.9); border: 1px solid #30363d; border-radius: 6px; padding: 1rem; font-size: 0.75rem; z-index: 100; }
+    .legend-item { display: flex; align-items: center; gap: 0.5rem; margin: 0.25rem 0; }
+    .legend-color { width: 12px; height: 12px; border-radius: 50%; }
+    .stats-bar { position: absolute; bottom: 1rem; right: 1rem; background: rgba(22,27,34,0.9); border: 1px solid #30363d; border-radius: 6px; padding: 1rem; font-size: 0.75rem; z-index: 100; color: #8b949e; }
+    .stats-bar strong { color: #c9d1d9; }
+    @media (max-width: 900px) {
+      .main { grid-template-columns: 1fr; }
+      .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid #30363d; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Azazael Domain Atlas</h1>
+    <div class="controls">
+      <input type="text" class="search-box" id="search" placeholder="Search domains, components...">
+      <a href="https://github.com/myzticalbabe/azazael" class="btn btn-secondary" target="_blank">Monorepo</a>
+      <a href="https://github.com/myzticalbabe" class="btn btn-secondary" target="_blank">@myzticalbabe</a>
+    </div>
+  </header>
+  <main class="main">
+    <aside class="sidebar">
+      <h2>Domains (11)</h2>
+      <ul class="domain-list" id="domainList"></ul>
+    </aside>
+    <div class="canvas-container">
+      <svg id="graph"></svg>
+      <div class="tooltip" id="tooltip"></div>
+      <div class="legend" id="legend"></div>
+      <div class="stats-bar" id="statsBar"></div>
+    </div>
+  </main>
+  <script>
+    // Domain data with pre-computed positions for force-directed layout
+    const domains = [
+      { id: "sentinel", name: "Sentinel (Rules Dev)", x: 200, y: 150, trees: 12, modules: 50, lines: 39600, classes: 42, worms: 0, rules: 66, color: "#ff6b6b", group: "core", description: "Rules development domain — core mandates, compliance, sentinel gates" },
+      { id: "cain", name: "CAIN", x: 400, y: 150, trees: 8, modules: 94, lines: 37635, classes: 43, worms: 0, rules: 0, color: "#ffa502", group: "render", description: "CAIN video rendering pipeline — Puppeteer capture, session injection" },
+      { id: "eve_rani", name: "Eve/Rani", x: 600, y: 150, trees: 2, modules: 22, lines: 5936, classes: 55, worms: 0, rules: 0, color: "#7bed9f", group: "ai", description: "Eve Unleashed & Rani components — local AI inferencing, Python REPL" },
+      { id: "hives", name: "Hives (Swarm)", x: 800, y: 150, trees: 2, modules: 151, lines: 74752, classes: 417, worms: 206, rules: 0, color: "#70a1ff", group: "swarm", description: "Swarm intelligence — 417 classes, 206 worms for distributed processing" },
+      { id: "gosp", name: "GOSP", x: 200, y: 350, trees: 5, modules: 3, lines: 357, classes: 1, worms: 0, rules: 0, color: "#e84393", group: "utility", description: "GOSP — three scripts plus evidence directories" },
+      { id: "ml", name: "ML (Shards/Modules)", x: 400, y: 350, trees: 2, modules: 50, lines: 17470, classes: 104, worms: 0, rules: 0, color: "#5352ed", group: "ml", description: "ML platform — shards, modules, training pipeline integration" },
+      { id: "shards", name: "Shards (Repository)", x: 600, y: 350, trees: 2, modules: 4, lines: 1125, classes: 0, worms: 0, rules: 0, color: "#00cec9", group: "utility", description: "Shard repository — flat root with direct file structure" },
+      { id: "edge0", name: "Edge0", x: 800, y: 350, trees: 5, modules: 161, lines: 30802, classes: 142, worms: 0, rules: 0, color: "#ffd32a", group: "investigation", description: "Edge0 — BCC re-investigation edges, flock grading, proof layers" },
+      { id: "dev", name: "Dev (Stacks)", x: 200, y: 550, trees: 0, modules: 58511, lines: 0, classes: 0, worms: 0, rules: 0, color: "#a29bfe", group: "meta", description: "Declared stacks domain: read from dist-info metadata (781 win / 206 ubuntu / 1001 kali)" },
+      { id: "wraith", name: "Wraith", x: 400, y: 550, trees: 3, modules: 0, lines: 0, classes: 0, worms: 0, rules: 0, color: "#fd79a8", group: "meta", description: "Wraith domain — meta-analysis components" },
+      { id: "oxman", name: "Oxman", x: 600, y: 550, trees: 3, modules: 0, lines: 0, classes: 0, worms: 0, rules: 0, color: "#ffeaa7", group: "meta", description: "Oxman domain — architectural components" }
+    ];
+
+    // Links between domains (composition/dependency relationships)
+    const links = [
+      { source: "azazael", target: "sentinel", type: "contains" },
+      { source: "azazael", target: "cain", type: "contains" },
+      { source: "azazael", target: "eve_rani", type: "contains" },
+      { source: "azazael", target: "hives", type: "contains" },
+      { source: "azazael", target: "gosp", type: "contains" },
+      { source: "azazael", target: "ml", type: "contains" },
+      { source: "azazael", target: "shards", type: "contains" },
+      { source: "azazael", target: "edge0", type: "contains" },
+      { source: "azazael", target: "dev", type: "contains" },
+      { source: "azazael", target: "wraith", type: "contains" },
+      { source: "azazael", target: "oxman", type: "contains" },
+      { source: "sentinel", target: "flaming-sword", type: "extracts" },
+      { source: "cain", target: "codex-video-engine", type: "extracts" },
+      { source: "eve_rani", target: "EveUnleashed", type: "extracts" },
+      { source: "hives", target: "krampus", type: "composes" },
+      { source: "ml", target: "hydra-mlcluster", type: "extracts" },
+      { source: "ml", target: "ecosystem-orchestrator", type: "extracts" },
+      { source: "gosp", target: "scribe", type: "extracts" },
+      { source: "shards", target: "shardex", type: "extracts" },
+      { source: "edge0", target: "esquire-admissibility", type: "extracts" },
+      { source: "dev", target: "azazael-core", type: "repackages" },
+      { source: "flaming-sword", target: "cradle", type: "composes" },
+      { source: "hives", target: "cradle", type: "composes" },
+      { source: "ml", target: "grantforge", type: "extracts" },
+      { source: "eve_rani", target: "madi", type: "extracts" },
+      { source: "sentinel", target: "jaeger", type: "extracts" }
+    ];
+
+    const width = window.innerWidth - 320;
+    const height = window.innerHeight - 80;
+
+    const svg = d3.select("#graph")
+      .attr("width", width)
+      .attr("height", height);
+
+    // Add zoom behavior
+    const g = svg.append("g");
+    svg.call(d3.zoom().scaleExtent([0.1, 4]).on("zoom", (event) => {
+      g.attr("transform", event.transform);
+    }));
+
+    // Force simulation
+    const simulation = d3.forceSimulation(domains)
+      .force("link", d3.forceLink(links).id(d => d.id).distance(150).strength(0.5))
+      .force("charge", d3.forceManyBody().strength(-300))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("collision", d3.forceCollide().radius(60))
+      .on("tick", ticked);
+
+    // Add root node (azazael monorepo)
+    const rootNode = { id: "azazael", name: "AZAZAEL (Monorepo)", x: width / 2, y: height / 2, trees: 1, modules: 45077, lines: 342166, classes: 856, worms: 206, rules: 72, color: "#58a6ff", group: "root", description: "Core monorepo: worm registry, CLUSTERWORMS, PAMS, DirectMemory, agent harness" };
+    domains.push(rootNode);
+
+    // Render links
+    const link = g.append("g")
+      .attr("stroke", "#30363d")
+      .attr("stroke-opacity", 0.6)
+      .selectAll("line")
+      .data(links)
+      .join("line")
+      .attr("stroke-width", d => d.type === "contains" ? 2 : 1.5)
+      .attr("stroke-dasharray", d => d.type === "extracts" ? "5,5" : d.type === "composes" ? "3,3" : "0");
+
+    // Render nodes
+    const node = g.append("g")
+      .selectAll("circle")
+      .data(domains)
+      .join("circle")
+      .attr("r", d => d.id === "azazael" ? 30 : Math.max(20, Math.min(40, 15 + Math.log10(d.modules || 1) * 8)))
+      .attr("fill", d => d.color)
+      .attr("stroke", "#fff")
+      .attr("stroke-width", d => d.id === "azazael" ? 3 : 2)
+      .call(drag(simulation))
+      .on("mouseover", (event, d) => showTooltip(event, d))
+      .on("mouseout", hideTooltip)
+      .on("click", (event, d) => selectDomain(d));
+
+    // Labels
+    const label = g.append("g")
+      .selectAll("text")
+      .data(domains)
+      .join("text")
+      .attr("text-anchor", "middle")
+      .attr("dy", d => d.id === "azazael" ? 45 : d.r + 18)
+      .attr("font-size", d => d.id === "azazael" ? "14px" : "11px")
+      .attr("fill", "#c9d1d9")
+      .attr("font-weight", d => d.id === "azazael" ? "700" : "500")
+      .text(d => d.name);
+
+    function ticked() {
+      link
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      node
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);
+
+      label
+        .attr("x", d => d.x)
+        .attr("y", d => d.y);
+    }
+
+    function drag(simulation) {
+      return d3.drag()
+        .on("start", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on("drag", (event, d) => {
+          d.fx = event.x;
+          d.fy = event.y;
+        })
+        .on("end", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        });
+    }
+
+    const tooltip = d3.select("#tooltip");
+    function showTooltip(event, d) {
+      tooltip.classed("visible", true)
+        .style("left", (event.clientX + 16) + "px")
+        .style("top", (event.clientY + 16) + "px")
+        .html(`
+          <h3>${d.name}</h3>
+          <p>${d.description}</p>
+          <div class="stats">
+            <span class="tag"><strong>${d.trees}</strong> trees</span>
+            <span class="tag"><strong>${d.modules.toLocaleString()}</strong> modules</span>
+            <span class="tag"><strong>${d.lines.toLocaleString()}</strong> lines</span>
+            <span class="tag"><strong>${d.classes}</strong> classes</span>
+            ${d.worms > 0 ? `<span class="tag"><strong>${d.worms}</strong> worms</span>` : ''}
+            ${d.rules > 0 ? `<span class="tag"><strong>${d.rules}</strong> rules</span>` : ''}
+          </div>
+          <div class="links">
+            <a href="https://github.com/myzticalbabe/azazael/tree/main/azazael/tools/domain_trees.py" class="btn" target="_blank">Source Tool</a>
+            <a href="https://github.com/myzticalbabe/azazael" class="btn btn-secondary" target="_blank">Monorepo</a>
+          </div>
+        `);
+      // Highlight connected nodes
+      link.classed("highlight", l => l.source.id === d.id || l.target.id === d.id);
+      node.classed("highlight", n => n.id === d.id || links.some(l => (l.source.id === d.id && l.target.id === n.id) || (l.target.id === d.id && l.source.id === n.id)));
+    }
+
+    function hideTooltip() {
+      tooltip.classed("visible", false);
+      link.classed("highlight", false);
+      node.classed("highlight", false);
+    }
+
+    function selectDomain(d) {
+      document.querySelectorAll(".domain-item").forEach(el => el.classList.toggle("active", el.dataset.id === d.id));
+    }
+
+    // Populate sidebar
+    const domainList = document.getElementById("domainList");
+    domains.filter(d => d.id !== "azazael").forEach(domain => {
+      const li = document.createElement("li");
+      li.className = "domain-item";
+      li.dataset.id = domain.id;
+      li.innerHTML = `
+        <div class="domain-name">${domain.name}</div>
+        <div class="domain-meta">
+          <span class="tag"><strong>${domain.trees}</strong> trees</span>
+          <span class="tag"><strong>${domain.modules.toLocaleString()}</strong> modules</span>
+          <span class="tag"><strong>${domain.lines.toLocaleString()}</strong> lines</span>
+          <span class="tag"><strong>${domain.classes}</strong> classes</span>
+          ${domain.worms > 0 ? `<span class="tag"><strong>${domain.worms}</strong> worms</span>` : ''}
+          ${domain.rules > 0 ? `<span class="tag"><strong>${domain.rules}</strong> rules</span>` : ''}
+        </div>
+      `;
+      li.onclick = () => {
+        // Find node in visualization and center on it
+        const transform = d3.zoomTransform(svg.node());
+        const targetX = width / 2 - domain.x * transform.k;
+        const targetY = height / 2 - domain.y * transform.k;
+        svg.transition().duration(750).call(
+          d3.zoom().scaleExtent([0.1, 4]),
+          d3.zoomIdentity.translate(targetX, targetY).scale(transform.k)
+        );
+        selectDomain(domain);
+        showTooltip({ clientX: domain.x * transform.k + 320 + transform.x + 16, clientY: domain.y * transform.k + transform.y + 16 }, domain);
+      };
+      domainList.appendChild(li);
+    });
+
+    // Search
+    document.getElementById("search").addEventListener("input", (e) => {
+      const filter = e.target.value.toLowerCase();
+      document.querySelectorAll(".domain-item").forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? "" : "none";
+      });
+      // Also filter nodes
+      node.style("opacity", d => d.name.toLowerCase().includes(filter) ? 1 : 0.1);
+      label.style("opacity", d => d.name.toLowerCase().includes(filter) ? 1 : 0.1);
+    });
+
+    // Stats bar
+    const totalModules = domains.reduce((sum, d) => sum + (d.modules || 0), 0);
+    const totalLines = domains.reduce((sum, d) => sum + (d.lines || 0), 0);
+    const totalClasses = domains.reduce((sum, d) => sum + (d.classes || 0), 0);
+    const totalWorms = domains.reduce((sum, d) => sum + (d.worms || 0), 0);
+    document.getElementById("statsBar").innerHTML = `
+      <strong>${domains.length - 1}</strong> domains · 
+      <strong>${totalModules.toLocaleString()}</strong> modules · 
+      <strong>${totalLines.toLocaleString()}</strong> lines · 
+      <strong>${totalClasses}</strong> classes · 
+      <strong>${totalWorms}</strong> worms
+    `;
+
+    // Legend
+    const groups = [...new Set(domains.map(d => d.group))];
+    const groupColors = {
+      root: "#58a6ff", core: "#ff6b6b", render: "#ffa502", ai: "#7bed9f",
+      swarm: "#70a1ff", utility: "#e84393", ml: "#5352ed",
+      investigation: "#ffd32a", meta: "#a29bfe"
+    };
+    const legend = d3.select("#legend");
+    legend.selectAll("div")
+      .data(groups)
+      .join("div")
+      .attr("class", "legend-item")
+      .html(d => `<div class="legend-color" style="background:${groupColors[d] || '#8b949e'}"></div><span>${d}</span>`);
+
+    // Handle resize
+    window.addEventListener("resize", () => {
+      const newWidth = window.innerWidth - 320;
+      const newHeight = window.innerHeight - 80;
+      svg.attr("width", newWidth).attr("height", newHeight);
+      simulation.force("center", d3.forceCenter(newWidth / 2, newHeight / 2));
+      simulation.alpha(0.3).restart();
+    });
+  </script>
+</body>
+</html>
