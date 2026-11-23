@@ -1,0 +1,42 @@
+{
+  "name": "myzticalbabe.github.io",
+  "version": "1.0.0",
+  "description": "myzticalbabe.github.io repository",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myzticalbabe/myzticalbabe.github.io.git"
+  },
+  "homepage": "https://github.com/myzticalbabe/myzticalbabe.github.io",
+  "bugs": {
+    "url": "https://github.com/myzticalbabe/myzticalbabe.github.io/issues"
+  },
+  "license": "MIT",
+  "author": "myzticalbabe.github.io Contributors",
+  "maintainers": [
+    {
+      "name": "myzticalbabe",
+      "email": "maintainers@myzticalbabe.com",
+      "web": "https://github.com/myzticalbabe"
+    }
+  ],
+  "keywords": [
+    "stem",
+    "education",
+    "open-source"
+  ],
+  "categories": [
+    "education",
+    "stem"
+  ],
+  "support": {
+    "documentation": "https://github.com/myzticalbabe/myzticalbabe.github.io/wiki",
+    "discussions": "https://github.com/myzticalbabe/myzticalbabe.github.io/discussions",
+    "security": "https://github.com/myzticalbabe/myzticalbabe.github.io/security/advisories"
+  },
+  "governance": {
+    "code_of_conduct": "CODE_OF_CONDUCT.md",
+    "contributing": "CONTRIBUTING.md",
+    "security_policy": "SECURITY.md",
+    "disclosure_policy": "DISCLOSURE_POLICY.md"
+  }
+}
