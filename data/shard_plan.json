@@ -1,0 +1,89 @@
+{
+  "languages": {
+    "batch": {
+      "modules": 59,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "c": {
+      "modules": 1,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "cython": {
+      "modules": 2,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "html": {
+      "modules": 145,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "javascript": {
+      "modules": 74,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "powershell": {
+      "modules": 15,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "python": {
+      "modules": 1,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "rust": {
+      "modules": 4,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "shell": {
+      "modules": 13,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    },
+    "typescript": {
+      "modules": 10,
+      "shards": 1,
+      "underfilled": 0,
+      "continuous": {
+        "straddling": 0
+      }
+    }
+  },
+  "totals": {
+    "shards": 10,
+    "straddling_shards": 0,
+    "wasted_slots": 0
+  }
+}

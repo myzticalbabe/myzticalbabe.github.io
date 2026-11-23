@@ -1,8 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: Got a question?
-    url: https://github.com/myzticalbabe/myzticalbabe.github.io/discussions/categories/q-a
-    about: Ask a question there!
-  - name: Want to contribute?
-    url: https://github.com/myzticalbabe/myzticalbabe.github.io/wiki/contribute
-    about: Head to the contribution guide
+  - name: Behavioural safety or vulnerability (private)
+    url: https://github.com/OWNER/nurse_ratchet/security/advisories/new
+    about: Report privately. Anything that weakens crisis routing or leaks a person's state is a security issue, not a bug. See SECURITY.md.
+  - name: If you are in crisis
+    url: https://988lifeline.org/
+    about: This repository is not help. In the US, call or text 988. Elsewhere, contact your local emergency number.

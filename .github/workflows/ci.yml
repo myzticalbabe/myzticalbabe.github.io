@@ -1,53 +1,168 @@
-name: CI
+name: ci
 
+# Landing Hub CI - validates atlas JSON schema and forest rendering
 on:
-  pull_request:
-    branches: [main, master]
   push:
-    branches: [main, master]
+    branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
 
-concurrency:
-  group: ci-${ github.ref }
-  cancel-in-progress: true
-
 jobs:
-  lint:
-    name: Lint
+  validate-atlas:
+    name: Validate Atlas JSON Schema
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check for large files
-        run: |
-          find . -type f -size +50M ! -path "./.git/*" | head -20
-          if [ $(find . -type f -size +50M ! -path "./.git/*" | wc -l) -gt 0 ]; then
-            echo "::error::Files larger than 50MB found"
-            exit 1
-          fi
 
-  test:
-    name: Test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install jsonschema
+
+      - name: Validate forest_manifest.json
+        run: |
+          python -c "
+          import json, jsonschema
+          with open('data/forest_manifest.json') as f:
+              manifest = json.load(f)
+          
+          # Basic schema validation
+          required = ['schema', 'generated_at', 'domains', 'trees']
+          for field in required:
+              assert field in manifest, f'Missing required field: {field}'
+          
+          # Validate each tree has required fields
+          for tree in manifest['trees']:
+              assert 'name' in tree, 'Tree missing name'
+              assert 'label' in tree, 'Tree missing label'
+              assert 'atlas' in tree, 'Tree missing atlas'
+              assert 'palette' in tree, 'Tree missing palette'
+              assert 'trunk' in tree['palette'], 'Palette missing trunk'
+              assert 'leaf' in tree['palette'], 'Palette missing leaf'
+              assert 'bg' in tree['palette'], 'Palette missing bg'
+          
+          print('forest_manifest.json: VALID')
+          print(f'  Domains: {len(manifest[\"domains\"])}')
+          print(f'  Trees: {len(manifest[\"trees\"])}')
+          "
+
+      - name: Validate domain atlases
+        run: |
+          import json, jsonschema, os, sys
+          
+          with open('data/forest_manifest.json') as f:
+              manifest = json.load(f)
+          
+          errors = []
+          for tree in manifest['trees']:
+              atlas_path = f"data/{tree['atlas']}"
+              if not os.path.exists(atlas_path):
+                  errors.append(f"Missing atlas file: {atlas_path}")
+                  continue
+              
+              with open(atlas_path) as f:
+                  atlas = json.load(f)
+              
+              # Validate atlas schema
+              required = ['schema', 'generated_at', 'trees', 'totals']
+              for field in required:
+                  if field not in atlas:
+                      errors.append(f"{tree['name']}: Missing required field: {field}")
+              
+              if 'trees' in atlas:
+                  for t in atlas['trees']:
+                      if 'nodes' not in t:
+                          errors.append(f"{tree['name']}: Tree missing nodes")
+                      if 'links' not in t:
+                          errors.append(f"{tree['name']}: Tree missing links")
+              
+              if 'totals' in atlas:
+                  totals = atlas['totals']
+                  if 'nodes' not in totals or 'edges' not in totals:
+                      errors.append(f"{tree['name']}: Totals missing nodes or edges")
+          
+          if errors:
+              for e in errors:
+                  print(f"ERROR: {e}", file=sys.stderr)
+              sys.exit(1)
+          
+          print('All domain atlases: VALID')
+
+      - name: Validate cross-repo table in README
+        run: |
+          import re
+          with open('README.md') as f:
+              readme = f.read()
+          
+          # Check for the domain table
+          if '| Repo | Description | Status |' not in readme:
+              print('ERROR: Cross-repo table header not found in README.md', file=sys.stderr)
+              exit(1)
+          
+          # Count repo rows
+          rows = len(re.findall(r'\| \[([^\]]+)\]\([^)]+\) \| [^|]+ \| Active \|', readme))
+          if rows < 20:
+              print(f'WARNING: Cross-repo table has only {rows} repos (expected 20+)', file=sys.stderr)
+          
+          print(f'Cross-repo table: {rows} repos found')
+
+  check-links:
+    name: Check Links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run tests
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check for broken internal links
         run: |
-          echo "No test suite configured yet"
-          # Add test commands here
+          import re, os
+          with open('README.md') as f:
+              readme = f.read()
+          
+          # Find all links
+          links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', readme)
+          errors = []
+          for text, url in links:
+              if url.startswith('https://github.com/myzticalbabe/'):
+                  # Check if repo exists in our catalog
+                  pass  # Skip external check for now
+              elif url.startswith('/') or url.startswith('./'):
+                  # Internal link
+                  path = url.lstrip('./')
+                  if path and not os.path.exists(path):
+                      errors.append(f"Missing internal file: {path} (from link '{text}')")
+          
+          if errors:
+              for e in errors:
+                  print(f"ERROR: {e}", file=sys.stderr)
+              exit(1)
+          
+          print('Internal links: OK')
 
-  summary:
-    name: Summary
-    needs: [lint, test]
-    if: always()
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: [validate-atlas, check-links]
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     steps:
-      - name: Check status
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - name: Build site
         run: |
-          echo "Lint: ${ needs.lint.result }"
-          echo "Test: ${ needs.test.result }"
-          if [[ "${ needs.lint.result }" != "success" ]] || [[ "${ needs.test.result }" != "success" ]]; then
-            exit 1
-          fi
+          # No build step needed - static files served directly
+          echo "Site ready for deployment"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4

@@ -1,51 +1,78 @@
-# Disclosure Policy
+# Disclosure policy
 
-## Security Disclosures
+What this project publishes, what it never publishes, and how the difference is
+enforced rather than trusted.
 
-We take security vulnerabilities seriously. If you discover a security issue in myzticalbabe.github.io, please report it responsibly.
+## The line
 
-### Reporting Security Issues
+**The method ships. The case does not.**
 
-**DO NOT** create a public GitHub issue for security vulnerabilities.
+This project grew out of a forensic investigation into how a care provider
+treated the people it served. The *techniques* that investigation produced —
+flock-based edge accounting, tier-graded evidence, negative universes, partial
+correlation networks over constructs, evaluation splits — are general, checkable
+by anyone with their own data, and worth publishing. The *records* are the
+private lives of identifiable people, including mental-health and tenancy
+records, and publishing them would be indefensible whatever the licence says.
 
-Instead, please report security issues via:
+So the public repository contains: instruments, protocols, aggregate counts,
+synthetic fixtures and citations. It does not contain the documents those
+citations point at.
 
-1. **GitHub Security Advisories** (preferred): Use the "Report a vulnerability" tab in the Security section of this repository
-2. **Email**: security@myzticalbabe.com with "[SECURITY] myzticalbabe.github.io" in the subject line
+## Never published
 
-### What to Include
+| class | examples | why |
+|---|---|---|
+| primary records | fetched PDFs, 990 part-VII extracts, court filings | they name private individuals; a re-fetchable citation has the same evidentiary value |
+| entity linkage | person-level resolution output, officer and tenant tables | linkage is itself an allegation about who is who |
+| narrative findings | findings documents about an identified organisation | defamation risk is not a licence question |
+| correspondence | signed instruments, emails, letters | consent was never given for publication |
+| raw fetch state | `FETCH_LOG`, raw-fetch directories, unsanitised caches | provenance for a claim, not a document set |
+| personal data | addresses, dates of birth, NPIs, medical details | no public interest weighs against a named individual's privacy here |
 
-Please provide as much detail as possible:
+`PUBLIC_MANIFEST.json` lists these as `never_ship` globs. It is a *deny* list, so
+it is backed by an allowlist: a file must be declared to ship, and an undeclared
+file above 4 KB fails the gate. Deny-lists fail open; allowlists fail closed.
 
-- Description of the vulnerability
-- Steps to reproduce
-- Potential impact
-- Any known mitigations or workarounds
-- Your contact information for follow-up
+## What a reader can verify instead
 
-### Response Timeline
+Every claim in the method documents is reproducible from sources the reader
+fetches themselves:
 
-- **Acknowledgment**: Within 48 hours
-- **Initial Assessment**: Within 5 business days
-- **Status Updates**: Every 10 business days until resolution
-- **Resolution Target**: Critical issues within 30 days, High within 60 days
+- the **quote, the amount, the date and the names** that make an assertion
+  checkable, with the document's SHA-256 so a re-fetch can be matched byte for byte;
+- the **instrument** that consumes them, which ships in full;
+- the **aggregate figures**, which are counts over documents the reader can obtain.
 
-### Disclosure Process
+That is the same standard this project applies to its own evidence: no raw file,
+no verification; a hash plus a re-fetchable locator, verification available to
+anyone, documents held by nobody.
 
-1. We will confirm receipt and begin investigation
-2. We will coordinate with you on a disclosure timeline
-3. We will develop and test a fix
-4. We will release a patch and publish a security advisory
-5. We will credit you (unless you prefer anonymity)
+## Enforcement
 
-## AI Usage Disclosure
+```bash
+python tools/nurse_ratchet_release_gate.py --check
+```
 
-This project follows the AI disclosure requirements in CONTRIBUTING.md and the PR template. All contributors must disclose AI usage in their contributions.
+fails when: a required community file is absent, an issue template lacks the
+frontmatter keys GitHub reads, a manifest path does not exist, a declared path
+matches a `never_ship` rule, an undeclared file is above the size floor, a
+secret-shaped string appears anywhere in the tree, or the README loses its
+Limitations section.
 
-## Responsible Use
+The last one is deliberate. A public therapeutic project that quietly drops its
+measured recall figure is more dangerous than one that was never published,
+because a reader would trust it.
 
-This software is provided for legitimate research, development, and educational purposes. Users are responsible for compliance with applicable laws and regulations.
+## If you believe something here should not be public
 
-## Contact
+Open an issue titled `disclosure` with the path and the reason. Takedown requests
+are honoured on a single maintainer's judgement, before any discussion of whether
+the material was lawful to publish. No contributor's consent overrides a data
+subject's objection.
 
-For questions about this policy: security@myzticalbabe.com
+## Reporting a vulnerability
+
+See `SECURITY.md`. For anything that is a safety concern about the agent's
+behaviour rather than a software defect, use the same channel and say so in the
+title: behaviour reports are triaged first.

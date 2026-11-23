@@ -1,0 +1,683 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:42",
+  "domain": "sentinel",
+  "label": "SENTINEL \u2014 RULES DEV",
+  "kind": "mixed",
+  "declared_roots": [
+    "src/SCRIPTS",
+    "src/CORE/compliance"
+  ],
+  "declared_files": [
+    "src/CORE/sentinel_enforcer.py",
+    "src/CORE/audit_trail.py",
+    "tools/evidence_gate.py",
+    "tools/terence_invariants.py",
+    "tools/mesh_function_preflight.py",
+    "tools/canon_drift_check.py"
+  ],
+  "totals": {
+    "modules": 50,
+    "lines": 40163,
+    "classes": 42,
+    "funcs": 223,
+    "methods": 280,
+    "public_api": 173,
+    "silence": 0,
+    "mains": 6,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 12,
+    "subpackages": 0,
+    "public_named_classes": 39,
+    "functions": 132,
+    "silence_guards": 86,
+    "entry_points": 32,
+    "parse_failures": 0,
+    "standalone_trees": 0,
+    "standalone_subpackages": 0
+  },
+  "trees": {
+    "SCRIPTS": {
+      "modules": 30,
+      "lines": 7873,
+      "classes": 13,
+      "funcs": 97,
+      "methods": 53,
+      "public_api": 110,
+      "silence": 0,
+      "mains": 26,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    },
+    "compliance": {
+      "modules": 14,
+      "lines": 10482,
+      "classes": 26,
+      "funcs": 35,
+      "methods": 221,
+      "public_api": 61,
+      "silence": 0,
+      "mains": 6,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    },
+    "sentinel_enforcer": {
+      "modules": 1,
+      "lines": 743,
+      "classes": 0,
+      "funcs": 19,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "audit_trail": {
+      "modules": 1,
+      "lines": 1764,
+      "classes": 1,
+      "funcs": 56,
+      "methods": 3,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "evidence_gate": {
+      "modules": 1,
+      "lines": 675,
+      "classes": 0,
+      "funcs": 19,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "terence_invariants": {
+      "modules": 1,
+      "lines": 2689,
+      "classes": 1,
+      "funcs": 76,
+      "methods": 1,
+      "public_api": 1,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "mesh_function_preflight": {
+      "modules": 1,
+      "lines": 1866,
+      "classes": 1,
+      "funcs": 39,
+      "methods": 2,
+      "public_api": 1,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "canon_drift_check": {
+      "modules": 1,
+      "lines": 377,
+      "classes": 0,
+      "funcs": 14,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 1,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    },
+    "MANDATES": {
+      "modules": 0,
+      "lines": 1498,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "rules": 49,
+      "kind": "canon"
+    },
+    "SOP": {
+      "modules": 0,
+      "lines": 1269,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "rules": 3,
+      "kind": "canon"
+    },
+    "SYSTEM_INSTRUCTIONS": {
+      "modules": 0,
+      "lines": 2634,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "rules": 20,
+      "kind": "canon"
+    },
+    "ERROR_LOG": {
+      "modules": 0,
+      "lines": 8293,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "rules": 0,
+      "kind": "canon"
+    }
+  },
+  "classes": {
+    "total": 42,
+    "public": 33,
+    "by_tree": {
+      "SCRIPTS.(root)": [
+        {
+          "name": "AzazaelEnvironment",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 7,
+          "public": true,
+          "module": "environ_updater.py"
+        },
+        {
+          "name": "TestAutoSync",
+          "bases": [
+            "unittest.TestCase"
+          ],
+          "methods": 10,
+          "public_methods": 9,
+          "public": true,
+          "module": "test_auto_sync.py"
+        },
+        {
+          "name": "SkillsSync",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "sync_skills.py"
+        },
+        {
+          "name": "TestGenerateTelemetry",
+          "bases": [
+            "unittest.TestCase"
+          ],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "test_generate_telemetry.py"
+        },
+        {
+          "name": "GateBash",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "gate_bash.py"
+        },
+        {
+          "name": "SentinelValidator",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "sentinel_gate.py"
+        },
+        {
+          "name": "GateStrReplace",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "gate_str_replace.py"
+        },
+        {
+          "name": "GateWriteFile",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "gate_write_file.py"
+        },
+        {
+          "name": "MLPatternMatcher",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "environ_updater.py"
+        },
+        {
+          "name": "Conflict",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "environ_updater.py"
+        },
+        {
+          "name": "ConflictType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "environ_updater.py"
+        },
+        {
+          "name": "EnvironmentStatus",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "environ_updater.py"
+        },
+        {
+          "name": "SpawnResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "environ_updater.py"
+        }
+      ],
+      "compliance.(root)": [
+        {
+          "name": "PreActionGate",
+          "bases": [],
+          "methods": 30,
+          "public_methods": 15,
+          "public": true,
+          "module": "pre_action_gate.py"
+        },
+        {
+          "name": "PolicyEngine",
+          "bases": [],
+          "methods": 23,
+          "public_methods": 18,
+          "public": true,
+          "module": "policy.py"
+        },
+        {
+          "name": "HeuristicErrorRecorder",
+          "bases": [],
+          "methods": 18,
+          "public_methods": 6,
+          "public": true,
+          "module": "heuristic_recorder.py"
+        },
+        {
+          "name": "ConfidenceGate",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 13,
+          "public": true,
+          "module": "governance.py"
+        },
+        {
+          "name": "ComplianceStateMachine",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 11,
+          "public": true,
+          "module": "state_machine.py"
+        },
+        {
+          "name": "ComplianceTelemetry",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 13,
+          "public": true,
+          "module": "telemetry.py"
+        },
+        {
+          "name": "ASTAntiPatternScanner",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 9,
+          "public": true,
+          "module": "scanner.py"
+        },
+        {
+          "name": "ComplianceScorer",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 9,
+          "public": true,
+          "module": "validating.py"
+        },
+        {
+          "name": "MultiAgentJudge",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 7,
+          "public": true,
+          "module": "governance.py"
+        },
+        {
+          "name": "ComplianceOrchestrator",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 5,
+          "public": true,
+          "module": "orchestrator.py"
+        },
+        {
+          "name": "RealtimeAuditPipeline",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "governance.py"
+        },
+        {
+          "name": "SchemaValidator",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "validating.py"
+        },
+        {
+          "name": "BehavioralGraphAnalyzer",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "governance.py"
+        },
+        {
+          "name": "DualLedgerValidator",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 1,
+          "public": true,
+          "module": "governance.py"
+        },
+        {
+          "name": "FindingsDB",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "scanner_db.py"
+        },
+        {
+          "name": "FormalVerifier",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "state_machine.py"
+        },
+        {
+          "name": "PolicyRule",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "policy.py"
+        },
+        {
+          "name": "AntiPatternResult",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "scanner.py"
+        },
+        {
+          "name": "BrokerInterceptor",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "policy.py"
+        },
+        {
+          "name": "ComplianceResult",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "orchestrator.py"
+        },
+        {
+          "name": "TelemetryEvent",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "telemetry.py"
+        },
+        {
+          "name": "ComplianceState",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "state_machine.py"
+        },
+        {
+          "name": "JudgeVerdict",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "governance.py"
+        },
+        {
+          "name": "GateViolationError",
+          "bases": [
+            "Exception"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "broker.py"
+        },
+        {
+          "name": "PolicyEffect",
+          "bases": [
+            "str",
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "policy.py"
+        },
+        {
+          "name": "StateMachineError",
+          "bases": [
+            "RuntimeError"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "state_machine.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 1,
+    "tree_pairs": 1,
+    "cross_root": {
+      "tree_pairs": 1,
+      "statements": 1,
+      "details": {
+        "SCRIPTS <-> compliance": 1
+      }
+    }
+  },
+  "canon": {
+    "files": [
+      {
+        "path": "C:\\Azazael\\azazael\\MANDATES.md",
+        "rules": 49,
+        "sections": 45,
+        "lines": 1498
+      },
+      {
+        "path": "C:\\Azazael\\azazael\\SOP.md",
+        "rules": 3,
+        "sections": 34,
+        "lines": 1269
+      },
+      {
+        "path": "C:\\Azazael\\azazael\\SYSTEM_INSTRUCTIONS.md",
+        "rules": 20,
+        "sections": 58,
+        "lines": 2634
+      },
+      {
+        "path": "C:\\Azazael\\azazael\\ERROR_LOG.md",
+        "rules": 0,
+        "sections": 166,
+        "lines": 8293
+      }
+    ],
+    "rules": 72
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "batch": 6,
+    "html": 4,
+    "json": 1,
+    "powershell": 14,
+    "python": 50,
+    "shell": 1,
+    "markdown": 1
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "half gate code, half canon: a rules tree must show both or it hides where a rule lives",
+    "SCRIPTS: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "compliance: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Cross-root edges resolved: 1 root pairs with 1 cross-root statements"
+  ],
+  "missing": []
+}

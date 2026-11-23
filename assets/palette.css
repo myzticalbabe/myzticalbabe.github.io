@@ -1,0 +1,194 @@
+/* YGGDRASIL Forest Index - Domain Color Palettes */
+
+:root {
+    /* Domain colors from forest_manifest.json */
+    --cain-trunk: #e05a3c;
+    --cain-leaf: #ffd166;
+    --cain-bg: #0b0609;
+    
+    --dev-trunk: #39d3c3;
+    --dev-leaf: #7fd1ff;
+    --dev-bg: #06070b;
+    
+    --edge0-trunk: #e05a3c;
+    --edge0-leaf: #7fb0ff;
+    --edge0-bg: #06080d;
+    
+    --eve_rani-trunk: #7aa2f7;
+    --eve_rani-leaf: #9ece6a;
+    --eve_rani-bg: #060a10;
+    
+    --gosp-trunk: #9ece6a;
+    --gosp-leaf: #e0af68;
+    --gosp-bg: #080a06;
+    
+    --hives-trunk: #c9a227;
+    --hives-leaf: #f2c14e;
+    --hives-bg: #0a0806;
+    
+    --ml-trunk: #b07ce8;
+    --ml-leaf: #7fd1ff;
+    --ml-bg: #08060c;
+    
+    --oxman-trunk: #8b5a2b;
+    --oxman-leaf: #d4a574;
+    --oxman-bg: #0a0806;
+    
+    --sentinel-trunk: #39d3c3;
+    --sentinel-leaf: #f2c14e;
+    --sentinel-bg: #07050d;
+    
+    --shards-trunk: #39d3c3;
+    --shards-leaf: #f2c14e;
+    --shards-bg: #070c0a;
+    
+    --wraith-trunk: #4a1a4a;
+    --wraith-leaf: #c084c0;
+    --wraith-bg: #060a10;
+    
+    /* Default fallback */
+    --domain-trunk: var(--sentinel-trunk);
+    --domain-leaf: var(--sentinel-leaf);
+    --domain-bg: var(--sentinel-bg);
+    
+    /* Global accent for UI elements (WCAG AA compliant) */
+    --accent-primary: #4fd1c5;
+    --accent-tertiary: #7aa2f7;
+}
+
+/* Domain-specific card accents */
+.domain-card[data-domain="cain"] { --domain-color: var(--cain-trunk); }
+.domain-card[data-domain="dev"] { --domain-color: var(--dev-trunk); }
+.domain-card[data-domain="edge0"] { --domain-color: var(--edge0-trunk); }
+.domain-card[data-domain="eve_rani"] { --domain-color: var(--eve_rani-trunk); }
+.domain-card[data-domain="gosp"] { --domain-color: var(--gosp-trunk); }
+.domain-card[data-domain="hives"] { --domain-color: var(--hives-trunk); }
+.domain-card[data-domain="ml"] { --domain-color: var(--ml-trunk); }
+.domain-card[data-domain="oxman"] { --domain-color: var(--oxman-trunk); }
+.domain-card[data-domain="sentinel"] { --domain-color: var(--sentinel-trunk); }
+.domain-card[data-domain="shards"] { --domain-color: var(--shards-trunk); }
+.domain-card[data-domain="wraith"] { --domain-color: var(--wraith-trunk); }
+
+/* Node colors for forest visualization */
+.node-cain { fill: var(--cain-trunk); }
+.node-cain-leaf { fill: var(--cain-leaf); }
+.node-dev { fill: var(--dev-trunk); }
+.node-dev-leaf { fill: var(--dev-leaf); }
+.node-edge0 { fill: var(--edge0-trunk); }
+.node-edge0-leaf { fill: var(--edge0-leaf); }
+.node-eve_rani { fill: var(--eve_rani-trunk); }
+.node-eve_rani-leaf { fill: var(--eve_rani-leaf); }
+.node-gosp { fill: var(--gosp-trunk); }
+.node-gosp-leaf { fill: var(--gosp-leaf); }
+.node-hives { fill: var(--hives-trunk); }
+.node-hives-leaf { fill: var(--hives-leaf); }
+.node-ml { fill: var(--ml-trunk); }
+.node-ml-leaf { fill: var(--ml-leaf); }
+.node-oxman { fill: var(--oxman-trunk); }
+.node-oxman-leaf { fill: var(--oxman-leaf); }
+.node-sentinel { fill: var(--sentinel-trunk); }
+.node-sentinel-leaf { fill: var(--sentinel-leaf); }
+.node-shards { fill: var(--shards-trunk); }
+.node-shards-leaf { fill: var(--shards-leaf); }
+.node-wraith { fill: var(--wraith-trunk); }
+.node-wraith-leaf { fill: var(--wraith-leaf); }
+
+/* Link colors */
+.link { stroke: var(--border-color, #2a2d3a); stroke-opacity: 0.3; }
+.link:hover { stroke: var(--text-secondary, #9aa0aa); stroke-opacity: 0.6; }
+
+/* Tooltip */
+.forest-tooltip {
+    position: absolute;
+    background: var(--bg-card, #161820);
+    border: 1px solid var(--border-color, #2a2d3a);
+    border-radius: var(--radius, 8px);
+    padding: 0.75rem;
+    pointer-events: none;
+    z-index: 1000;
+    font-size: 0.8rem;
+    max-width: 280px;
+    box-shadow: var(--shadow, 0 4px 24px rgba(0,0,0,0.4));
+}
+
+.forest-tooltip.hidden { display: none; }
+
+.forest-tooltip .tooltip-title {
+    font-weight: 600;
+    color: var(--text-primary, #e8eaf0);
+    margin-bottom: 0.25rem;
+}
+
+.forest-tooltip .tooltip-domain {
+    color: var(--accent-primary, #39d3c3);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.forest-tooltip .tooltip-stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem 0;
+    font-size: 0.75rem;
+}
+
+.forest-tooltip .tooltip-stat-label {
+    color: var(--text-muted, #6b7280);
+}
+
+.forest-tooltip .tooltip-stat-value {
+    color: var(--text-primary, #e8eaf0);
+}
+
+/* Legend */
+.forest-legend {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: var(--bg-card, #161820);
+    border: 1px solid var(--border-color, #2a2d3a);
+    border-radius: var(--radius, 8px);
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    z-index: 50;
+}
+
+.forest-legend.hidden { display: none; }
+
+.forest-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem 0;
+}
+
+.forest-legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+/* Node rendering styles */
+.node-circle {
+    transition: r 0.15s ease, fill 0.15s ease;
+}
+
+.node-circle:hover {
+    r: 8px !important;
+    filter: brightness(1.2);
+}
+
+.node-label {
+    font-size: 10px;
+    fill: var(--text-secondary, #9aa0aa);
+    pointer-events: none;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.node-label.visible {
+    fill: var(--text-primary, #e8eaf0);
+    font-weight: 500;
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:44",
+  "domain": "shards",
+  "label": "SHARD REPOSITORY",
+  "kind": "mixed",
+  "declared_roots": [
+    "src/SHARDS"
+  ],
+  "declared_files": [],
+  "totals": {
+    "modules": 5,
+    "lines": 1506,
+    "classes": 10,
+    "funcs": 0,
+    "methods": 5,
+    "public_api": 32,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 2,
+    "subpackages": 0,
+    "public_named_classes": 10,
+    "functions": 22,
+    "silence_guards": 1,
+    "entry_points": 3,
+    "parse_failures": 0,
+    "standalone_trees": 0,
+    "standalone_subpackages": 0,
+    "shards": 204
+  },
+  "trees": {
+    "SHARDS": {
+      "modules": 5,
+      "lines": 1506,
+      "classes": 10,
+      "funcs": 22,
+      "methods": 5,
+      "public_api": 32,
+      "silence": 0,
+      "mains": 3,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    },
+    "skills_skills": {
+      "modules": 204,
+      "lines": 0,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "shards": 204,
+      "loose_md": 37,
+      "kind": "shards",
+      "unit": "shards"
+    }
+  },
+  "classes": {
+    "total": 10,
+    "public": 1,
+    "by_tree": {
+      "SHARDS.(root)": [
+        {
+          "name": "PromptGuard",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "prompt_guard.py"
+        },
+        {
+          "name": "CleanupRecommendation",
+          "bases": [
+            "TypedDict"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "antibodies.py"
+        },
+        {
+          "name": "EmbeddedInfo",
+          "bases": [
+            "TypedDict"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "antibodies.py"
+        },
+        {
+          "name": "InstallInfo",
+          "bases": [
+            "TypedDict"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "antibodies.py"
+        },
+        {
+          "name": "PythonInfo",
+          "bases": [
+            "TypedDict"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "antibodies.py"
+        },
+        {
+          "name": "RelationshipGraph",
+          "bases": [
+            "TypedDict"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "antibodies.py"
+        },
+        {
+          "name": "SystemData",
+          "bases": [
+            "TypedDict"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "antibodies.py"
+        },
+        {
+          "name": "ThreatDetection",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "prompt_guard.py"
+        },
+        {
+          "name": "ThreatLevel",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "prompt_guard.py"
+        },
+        {
+          "name": "ValidationResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "prompt_guard.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {
+    ".agents/skills": {
+      "shard_dirs": 204,
+      "loose_md": 37
+    }
+  },
+  "evidence": {},
+  "languages": {
+    "json": 2,
+    "python": 5
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "code shards and skill shards are counted separately: a skill is a directory holding SKILL.md",
+    "SHARDS: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Single root domain; cross_root_edges_resolved=True by default"
+  ],
+  "missing": []
+}

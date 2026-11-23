@@ -1,0 +1,144 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:45",
+  "domain": "oxman",
+  "label": "HEADLESS OXMAN \u2014 RENDER CHARACTER",
+  "kind": "code",
+  "declared_roots": [
+    "src/RENDERING/characters/oxman",
+    "src/RENDERING/pipeline"
+  ],
+  "declared_files": [],
+  "totals": {
+    "modules": 4,
+    "lines": 247,
+    "classes": 0,
+    "funcs": 0,
+    "methods": 0,
+    "public_api": 0,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 3,
+    "subpackages": 0,
+    "public_named_classes": 0,
+    "functions": 0,
+    "silence_guards": 0,
+    "entry_points": 0,
+    "parse_failures": 0,
+    "standalone_trees": 0,
+    "standalone_subpackages": 0
+  },
+  "trees": {
+    "oxman": {
+      "modules": 2,
+      "lines": 18,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    },
+    "pipeline": {
+      "modules": 2,
+      "lines": 54,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0
+    },
+    "RENDERING_SERIES_PLAN_Headless_Oxman_Lilith_Wraith": {
+      "modules": 0,
+      "lines": 175,
+      "classes": 0,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "rules": 0,
+      "kind": "canon"
+    }
+  },
+  "classes": {
+    "total": 0,
+    "public": 0,
+    "by_tree": {}
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0,
+    "cross_root": {
+      "tree_pairs": 0,
+      "statements": 0,
+      "details": {}
+    }
+  },
+  "canon": {
+    "files": [
+      {
+        "path": "C:\\Azazael\\azazael\\RENDERING_SERIES_PLAN_Headless_Oxman_Lilith_Wraith.md",
+        "rules": 0,
+        "sections": 9,
+        "lines": 175
+      }
+    ],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "python": 4
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "Character assets, ComfyUI prompts, Blender rig, animation keys for Headless Oxman",
+    "oxman: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "pipeline: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "Cross-root edges resolved: 0 root pairs with 0 cross-root statements"
+  ],
+  "missing": []
+}

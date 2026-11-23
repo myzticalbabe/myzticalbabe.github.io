@@ -1,0 +1,66 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:44",
+  "domain": "dev",
+  "label": "DEV \u2014 DEEP-LEARNING STACKS, ALL ENVIRONMENTS",
+  "kind": "stacks",
+  "declared_roots": [],
+  "declared_files": [
+    "tools/dev_stack_census.py",
+    "tools/domain_trees.py"
+  ],
+  "totals": {
+    "modules": 0,
+    "lines": 0,
+    "classes": 0,
+    "funcs": 0,
+    "methods": 0,
+    "public_api": 0,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0
+  },
+  "trees": {},
+  "classes": {
+    "total": 0,
+    "public": 0,
+    "by_tree": {}
+  },
+  "worms": {
+    "total": 0,
+    "categories_named": 0,
+    "by_category": {},
+    "by_tree": {},
+    "by_owner": {},
+    "items": []
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "packages": {},
+  "environments": {},
+  "languages": {},
+  "cross_root_edges_resolved": false,
+  "notes": [
+    "oneAPI/XPU is Windows-only (torch +xpu, triton-xpu, intel sycl); Ubuntu torch is +cpu; Kali has no framework. Versions from dist-info",
+    "census file absent -- run tools/dev_stack_census.py first"
+  ],
+  "missing": [
+    "C:\\Users\\clint\\yggdrasil_forest\\dev_stack_census.json"
+  ]
+}

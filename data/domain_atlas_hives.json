@@ -1,0 +1,5826 @@
+{
+  "schema": "azazael.domain_atlas/1",
+  "generated_at": "2026-11-14T10:11:43",
+  "domain": "hives",
+  "label": "SWARM HIVES",
+  "kind": "code",
+  "declared_roots": [
+    "src/CORE/WORMS"
+  ],
+  "declared_files": [
+    "src/CORE/worm_registry.py"
+  ],
+  "totals": {
+    "modules": 152,
+    "lines": 74895,
+    "classes": 417,
+    "funcs": 38,
+    "methods": 2013,
+    "public_api": 713,
+    "silence": 0,
+    "mains": 0,
+    "hubs": [],
+    "subs": 0,
+    "inbound_trees": [],
+    "outbound_trees": [],
+    "standalone": true,
+    "is_trunk": false,
+    "saplings": 0,
+    "shard_remainder": 0,
+    "trees": 36,
+    "subpackages": 2,
+    "public_named_classes": 404,
+    "functions": 306,
+    "silence_guards": 375,
+    "entry_points": 47,
+    "parse_failures": 0,
+    "standalone_trees": 1,
+    "standalone_subpackages": 2
+  },
+  "trees": {
+    "diagnostic": {
+      "modules": 22,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 22,
+      "kind": "category",
+      "category": "diagnostic",
+      "unit": "worms",
+      "contains": "22 worms registered as 'diagnostic'"
+    },
+    "analysis": {
+      "modules": 14,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 14,
+      "kind": "category",
+      "category": "analysis",
+      "unit": "worms",
+      "contains": "14 worms registered as 'analysis'"
+    },
+    "learning": {
+      "modules": 14,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 14,
+      "kind": "category",
+      "category": "learning",
+      "unit": "worms",
+      "contains": "14 worms registered as 'learning'"
+    },
+    "orchestration": {
+      "modules": 10,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 10,
+      "kind": "category",
+      "category": "orchestration",
+      "unit": "worms",
+      "contains": "10 worms registered as 'orchestration'"
+    },
+    "monitor": {
+      "modules": 9,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 9,
+      "kind": "category",
+      "category": "monitor",
+      "unit": "worms",
+      "contains": "9 worms registered as 'monitor'"
+    },
+    "security": {
+      "modules": 8,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 8,
+      "kind": "category",
+      "category": "security",
+      "unit": "worms",
+      "contains": "8 worms registered as 'security'"
+    },
+    "xenomorph": {
+      "modules": 8,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 8,
+      "kind": "category",
+      "category": "xenomorph",
+      "unit": "worms",
+      "contains": "8 worms registered as 'xenomorph'"
+    },
+    "mesh": {
+      "modules": 7,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 7,
+      "kind": "category",
+      "category": "mesh",
+      "unit": "worms",
+      "contains": "7 worms registered as 'mesh'"
+    },
+    "synapse": {
+      "modules": 7,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 7,
+      "kind": "category",
+      "category": "synapse",
+      "unit": "worms",
+      "contains": "7 worms registered as 'synapse'"
+    },
+    "visualization": {
+      "modules": 7,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 7,
+      "kind": "category",
+      "category": "visualization",
+      "unit": "worms",
+      "contains": "7 worms registered as 'visualization'"
+    },
+    "communication": {
+      "modules": 6,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 6,
+      "kind": "category",
+      "category": "communication",
+      "unit": "worms",
+      "contains": "6 worms registered as 'communication'"
+    },
+    "envmesh": {
+      "modules": 6,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 6,
+      "kind": "category",
+      "category": "envmesh",
+      "unit": "worms",
+      "contains": "6 worms registered as 'envmesh'"
+    },
+    "telemetry": {
+      "modules": 6,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 6,
+      "kind": "category",
+      "category": "telemetry",
+      "unit": "worms",
+      "contains": "6 worms registered as 'telemetry'"
+    },
+    "backup": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "backup",
+      "unit": "worms",
+      "contains": "5 worms registered as 'backup'"
+    },
+    "config": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "config",
+      "unit": "worms",
+      "contains": "5 worms registered as 'config'"
+    },
+    "container": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "container",
+      "unit": "worms",
+      "contains": "5 worms registered as 'container'"
+    },
+    "engram": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "engram",
+      "unit": "worms",
+      "contains": "5 worms registered as 'engram'"
+    },
+    "immune": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "immune",
+      "unit": "worms",
+      "contains": "5 worms registered as 'immune'"
+    },
+    "migration": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "migration",
+      "unit": "worms",
+      "contains": "5 worms registered as 'migration'"
+    },
+    "plasticity": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "plasticity",
+      "unit": "worms",
+      "contains": "5 worms registered as 'plasticity'"
+    },
+    "profiling": {
+      "modules": 5,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 5,
+      "kind": "category",
+      "category": "profiling",
+      "unit": "worms",
+      "contains": "5 worms registered as 'profiling'"
+    },
+    "axon": {
+      "modules": 4,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 4,
+      "kind": "category",
+      "category": "axon",
+      "unit": "worms",
+      "contains": "4 worms registered as 'axon'"
+    },
+    "consolidation": {
+      "modules": 4,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 4,
+      "kind": "category",
+      "category": "consolidation",
+      "unit": "worms",
+      "contains": "4 worms registered as 'consolidation'"
+    },
+    "dendrite": {
+      "modules": 4,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 4,
+      "kind": "category",
+      "category": "dendrite",
+      "unit": "worms",
+      "contains": "4 worms registered as 'dendrite'"
+    },
+    "glia": {
+      "modules": 4,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 4,
+      "kind": "category",
+      "category": "glia",
+      "unit": "worms",
+      "contains": "4 worms registered as 'glia'"
+    },
+    "consensus": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "consensus",
+      "unit": "worms",
+      "contains": "3 worms registered as 'consensus'"
+    },
+    "federated": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "federated",
+      "unit": "worms",
+      "contains": "3 worms registered as 'federated'"
+    },
+    "metabolic": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "metabolic",
+      "unit": "worms",
+      "contains": "3 worms registered as 'metabolic'"
+    },
+    "servemesh": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "servemesh",
+      "unit": "worms",
+      "contains": "3 worms registered as 'servemesh'"
+    },
+    "sync": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "sync",
+      "unit": "worms",
+      "contains": "3 worms registered as 'sync'"
+    },
+    "thalamus": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "thalamus",
+      "unit": "worms",
+      "contains": "3 worms registered as 'thalamus'"
+    },
+    "utility": {
+      "modules": 3,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 3,
+      "kind": "category",
+      "category": "utility",
+      "unit": "worms",
+      "contains": "3 worms registered as 'utility'"
+    },
+    "ml": {
+      "modules": 2,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 2,
+      "kind": "category",
+      "category": "ml",
+      "unit": "worms",
+      "contains": "2 worms registered as 'ml'"
+    },
+    "defense": {
+      "modules": 1,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 1,
+      "kind": "category",
+      "category": "defense",
+      "unit": "worms",
+      "contains": "1 worms registered as 'defense'"
+    },
+    "expansion": {
+      "modules": 1,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 1,
+      "kind": "category",
+      "category": "expansion",
+      "unit": "worms",
+      "contains": "1 worms registered as 'expansion'"
+    },
+    "network": {
+      "modules": 1,
+      "lines": 0,
+      "classes": null,
+      "funcs": 0,
+      "methods": 0,
+      "public_api": 0,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "worms": 1,
+      "kind": "category",
+      "category": "network",
+      "unit": "worms",
+      "contains": "1 worms registered as 'network'"
+    }
+  },
+  "classes": {
+    "total": 417,
+    "public": 297,
+    "by_tree": {
+      "WORMS.(root)": [
+        {
+          "name": "MetaCluster",
+          "bases": [],
+          "methods": 25,
+          "public_methods": 13,
+          "public": true,
+          "module": "METACLUSTER.py"
+        },
+        {
+          "name": "DeadLetterQueue",
+          "bases": [],
+          "methods": 23,
+          "public_methods": 18,
+          "public": true,
+          "module": "dead_letter_queue.py"
+        },
+        {
+          "name": "ClusterWORMZ",
+          "bases": [],
+          "methods": 21,
+          "public_methods": 15,
+          "public": true,
+          "module": "CLUSTERWORMS.py"
+        },
+        {
+          "name": "OSCongruency",
+          "bases": [],
+          "methods": 21,
+          "public_methods": 13,
+          "public": true,
+          "module": "OS_CONGRUENCY.py"
+        },
+        {
+          "name": "WORMZ",
+          "bases": [],
+          "methods": 20,
+          "public_methods": 6,
+          "public": true,
+          "module": "WORMZ.py"
+        },
+        {
+          "name": "NetworkDiag",
+          "bases": [],
+          "methods": 19,
+          "public_methods": 10,
+          "public": true,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "SMARTDISK",
+          "bases": [],
+          "methods": 19,
+          "public_methods": 9,
+          "public": true,
+          "module": "SMARTDISK.py"
+        },
+        {
+          "name": "SYSTEMZ_ML",
+          "bases": [],
+          "methods": 19,
+          "public_methods": 9,
+          "public": true,
+          "module": "SYSTEMZ_ML.py"
+        },
+        {
+          "name": "WORMZ_ML",
+          "bases": [],
+          "methods": 18,
+          "public_methods": 6,
+          "public": true,
+          "module": "WORMZ_ML.py"
+        },
+        {
+          "name": "ParallelInferenceWorm",
+          "bases": [],
+          "methods": 17,
+          "public_methods": 9,
+          "public": true,
+          "module": "PARALLEL_INFERENCE_WORM.py"
+        },
+        {
+          "name": "InferenceSubscriberWorm",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 6,
+          "public": true,
+          "module": "INFERENCE_SUBSCRIBER.py"
+        },
+        {
+          "name": "MorphingWorm",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 15,
+          "public": true,
+          "module": "MORPHING_WORM.py"
+        },
+        {
+          "name": "BinaryAnalysis",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 13,
+          "public": true,
+          "module": "BINARY_ANALYSIS.py"
+        },
+        {
+          "name": "DEPENDZ",
+          "bases": [],
+          "methods": 14,
+          "public_methods": 3,
+          "public": true,
+          "module": "DEPENDZ.py"
+        },
+        {
+          "name": "ReverseTools",
+          "bases": [],
+          "methods": 13,
+          "public_methods": 10,
+          "public": true,
+          "module": "REVERSE_TOOLS.py"
+        },
+        {
+          "name": "CLOCKZ",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 10,
+          "public": true,
+          "module": "CLOCKZ.py"
+        },
+        {
+          "name": "ConcurrencyGateWorm",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 4,
+          "public": true,
+          "module": "CONCURRENCY_GATE_WORM.py"
+        },
+        {
+          "name": "DiagnosticWorm",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 9,
+          "public": true,
+          "module": "DIAGNOSTIC_WORM.py"
+        },
+        {
+          "name": "NimInferenceWorm",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 7,
+          "public": true,
+          "module": "NIM_INFERENCE.py"
+        },
+        {
+          "name": "FastErrorScanner",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 8,
+          "public": true,
+          "module": "ERROR_SCAN_WORM.py"
+        },
+        {
+          "name": "METAZ",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 4,
+          "public": true,
+          "module": "METAZ.py"
+        },
+        {
+          "name": "StrideVerifierWorm",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 3,
+          "public": true,
+          "module": "STRIDE_VERIFIER_WORM.py"
+        },
+        {
+          "name": "WormFleet",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 8,
+          "public": true,
+          "module": "WORM_FLEET.py"
+        },
+        {
+          "name": "CainWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 8,
+          "public": true,
+          "module": "CAIN_WORM.py"
+        },
+        {
+          "name": "ClusterInspector",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "DISKZ",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "DISKZ.py"
+        },
+        {
+          "name": "InferenceWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "INFERENCE_WORM.py"
+        },
+        {
+          "name": "NETWORXZ",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "NETWORXZ.py"
+        },
+        {
+          "name": "PROCESSZ",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "PROCESSZ.py"
+        },
+        {
+          "name": "PipelineWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 2,
+          "public": true,
+          "module": "PIPELINE_WORM.py"
+        },
+        {
+          "name": "SystemZ",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "SYSTEMZ.py"
+        },
+        {
+          "name": "VideoAnalyzerWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "VIDEO_ANALYZER_WORM.py"
+        },
+        {
+          "name": "WormSelectorWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 3,
+          "public": true,
+          "module": "WORM_SELECTOR.py"
+        },
+        {
+          "name": "MorphingWormV2",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "MORPHING_WORM_V2.py"
+        },
+        {
+          "name": "SpeculativeForkWorm",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 2,
+          "public": true,
+          "module": "SPECULATIVE_FORK_WORM.py"
+        },
+        {
+          "name": "ClusterState",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "CLUSTERWORMS.py"
+        },
+        {
+          "name": "ConcurrencyManager",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "CONCURRENCY.py"
+        },
+        {
+          "name": "_WatchdogThread",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 4,
+          "public": false,
+          "module": "CLUSTERWORMS.py"
+        },
+        {
+          "name": "EnvironmentalVariableInspector",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "PathwayValidator",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "ClusterExecutor",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "CONCURRENCY.py"
+        },
+        {
+          "name": "OMNIV2",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "OMNI_WORM_V2.py"
+        },
+        {
+          "name": "TaskManager",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "CONCURRENCY.py"
+        },
+        {
+          "name": "WormExecutor",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLUSTERWORMS.py"
+        },
+        {
+          "name": "WormExecutor",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "CONCURRENCY.py"
+        },
+        {
+          "name": "AutoDownloaderWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "CODEX_TOOLS.py"
+        },
+        {
+          "name": "CainAnalyzerWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "CODEX_TOOLS.py"
+        },
+        {
+          "name": "DeadLetter",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "dead_letter_queue.py"
+        },
+        {
+          "name": "DnsWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "DNSWORM.py"
+        },
+        {
+          "name": "PERSEPHONEWORM",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "PERSEPHONE_WORM.py"
+        },
+        {
+          "name": "POINDEXTERWORM",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "POINDEXTER_WORM.py"
+        },
+        {
+          "name": "TracerouteHop",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "BenchmarkWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "BENCHMARK_WORM.py"
+        },
+        {
+          "name": "EmojiMakerWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "CODEX_TOOLS.py"
+        },
+        {
+          "name": "EnhancedAnimationsWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "CODEX_TOOLS.py"
+        },
+        {
+          "name": "HTMLInspector",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "MarkdownFileInspector",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "PowerShellInspector",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "TextFileInspector",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "Threat",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "STRIDE_VERIFIER_WORM.py"
+        },
+        {
+          "name": "WSLRecovery",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "WSL_RECOVERY_WORM.py"
+        },
+        {
+          "name": "_ToolBeltWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "CLAWBOT",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLAWBOT.py"
+        },
+        {
+          "name": "ClusterResult",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "CLUSTERWORMS.py"
+        },
+        {
+          "name": "Mitigation",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "STRIDE_VERIFIER_WORM.py"
+        },
+        {
+          "name": "PingResult",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "SymbolEntry",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "BINARY_ANALYSIS_TYPES.py"
+        },
+        {
+          "name": "VerificationResult",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "STRIDE_VERIFIER_WORM.py"
+        },
+        {
+          "name": "_KaliToolWorm",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": false,
+          "module": "KALIWORMS.py"
+        },
+        {
+          "name": "AnomalyResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SYSTEMZ_ML.py"
+        },
+        {
+          "name": "ArchiveSystemWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "BIBLEntry",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "WORMZ.py"
+        },
+        {
+          "name": "BranchResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SPECULATIVE_FORK_WORM.py"
+        },
+        {
+          "name": "ComprehensiveFixWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "ConcurrencyConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CONCURRENCY.py"
+        },
+        {
+          "name": "ConcurrencyConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CONCURRENCY_GATE_WORM.py"
+        },
+        {
+          "name": "CrawlPrediction",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "WORMZ_ML.py"
+        },
+        {
+          "name": "CrawlResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "WORMZ.py"
+        },
+        {
+          "name": "DebugRunnerWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "DiskAlert",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SMARTDISK.py"
+        },
+        {
+          "name": "DiskHealth",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SMARTDISK.py"
+        },
+        {
+          "name": "DiskPartition",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "OS_CONGRUENCY.py"
+        },
+        {
+          "name": "DiskUsage",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "DISKZ.py"
+        },
+        {
+          "name": "ElfHeaders",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "BINARY_ANALYSIS_TYPES.py"
+        },
+        {
+          "name": "EntropyResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "BINARY_ANALYSIS_TYPES.py"
+        },
+        {
+          "name": "EnvironUpdaterWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "EnvironmentManagerWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "ErrorzWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "ExecutionResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CONCURRENCY.py"
+        },
+        {
+          "name": "ForkConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SPECULATIVE_FORK_WORM.py"
+        },
+        {
+          "name": "ForkResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SPECULATIVE_FORK_WORM.py"
+        },
+        {
+          "name": "ForkStrategy",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SPECULATIVE_FORK_WORM.py"
+        },
+        {
+          "name": "GateRequest",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CONCURRENCY_GATE_WORM.py"
+        },
+        {
+          "name": "GateStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CONCURRENCY_GATE_WORM.py"
+        },
+        {
+          "name": "GhidraAnalysis",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "REVERSE_TOOLS.py"
+        },
+        {
+          "name": "HealthzWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "InspectionResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CLUSTER_INSPECTOR.py"
+        },
+        {
+          "name": "LspDiagnosisWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "MLEntry",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "WORMZ_ML.py"
+        },
+        {
+          "name": "MetaClusterResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "METACLUSTER.py"
+        },
+        {
+          "name": "MetaClusterState",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "METACLUSTER.py"
+        },
+        {
+          "name": "MetriczWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "MonitorLearningWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "MtrHop",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "MtrResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "NetstatEntry",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "NetworkInterface",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "NETWORXZ.py"
+        },
+        {
+          "name": "OpenFileEntry",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "NETWORK_DIAG.py"
+        },
+        {
+          "name": "PeHeaders",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "BINARY_ANALYSIS_TYPES.py"
+        },
+        {
+          "name": "PipelineConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "PIPELINE_WORM.py"
+        },
+        {
+          "name": "PipelineResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "PIPELINE_WORM.py"
+        },
+        {
+          "name": "ProcessInfo",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "PROCESSZ.py"
+        },
+        {
+          "name": "PythonMapperQuickWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "PythonSystemMapperFullWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "PythonSystemMapperWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "QLAnalysisWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "QwythosProxyWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "Radare2Analysis",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "REVERSE_TOOLS.py"
+        },
+        {
+          "name": "ResourcePrediction",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SYSTEMZ_ML.py"
+        },
+        {
+          "name": "SMARTAttribute",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SMARTDISK.py"
+        },
+        {
+          "name": "SMARTDISKConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SMARTDISK.py"
+        },
+        {
+          "name": "SYSTEMZ_MLConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SYSTEMZ_ML.py"
+        },
+        {
+          "name": "ScheduledTask",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CLOCKZ.py"
+        },
+        {
+          "name": "SectionHeader",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "BINARY_ANALYSIS_TYPES.py"
+        },
+        {
+          "name": "StageConfig",
+          "bases": [
+            "Generic[T, U]"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "PIPELINE_WORM.py"
+        },
+        {
+          "name": "StageResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "PIPELINE_WORM.py"
+        },
+        {
+          "name": "StageStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "PIPELINE_WORM.py"
+        },
+        {
+          "name": "StartupItem",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "OS_CONGRUENCY.py"
+        },
+        {
+          "name": "StrideCategory",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "STRIDE_VERIFIER_WORM.py"
+        },
+        {
+          "name": "SystemSnapshot",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SYSTEMZ_ML.py"
+        },
+        {
+          "name": "SystemStatus",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "OS_CONGRUENCY.py"
+        },
+        {
+          "name": "SystemStatus",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "SYSTEMZ.py"
+        },
+        {
+          "name": "ToolStatus",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "REVERSE_TOOLS.py"
+        },
+        {
+          "name": "TrimzWorm",
+          "bases": [
+            "_ToolBeltWorm"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "TOOLBELTZ.py"
+        },
+        {
+          "name": "WORMZConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "WORMZ.py"
+        },
+        {
+          "name": "WORMZ_MLConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "WORMZ_ML.py"
+        },
+        {
+          "name": "WindowsService",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "OS_CONGRUENCY.py"
+        },
+        {
+          "name": "WormConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "CLUSTERWORMS.py"
+        },
+        {
+          "name": "WormGenome",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "MORPHING_WORM.py"
+        }
+      ],
+      "WORMS.expansion": [
+        {
+          "name": "CuttingEdgeModel",
+          "bases": [],
+          "methods": 42,
+          "public_methods": 29,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "EvolutionEngine",
+          "bases": [],
+          "methods": 29,
+          "public_methods": 12,
+          "public": true,
+          "module": "expansion/evolution.py"
+        },
+        {
+          "name": "SpineCycleWorm",
+          "bases": [],
+          "methods": 29,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "DataPipelineWorm",
+          "bases": [],
+          "methods": 26,
+          "public_methods": 23,
+          "public": true,
+          "module": "expansion/learning_pipeline.py"
+        },
+        {
+          "name": "FitnessOracle",
+          "bases": [],
+          "methods": 25,
+          "public_methods": 15,
+          "public": true,
+          "module": "expansion/oracle.py"
+        },
+        {
+          "name": "DreamingModule",
+          "bases": [],
+          "methods": 23,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/dreaming.py"
+        },
+        {
+          "name": "MetaCognitionWorm",
+          "bases": [],
+          "methods": 21,
+          "public_methods": 15,
+          "public": true,
+          "module": "expansion/meta_cognition.py"
+        },
+        {
+          "name": "DatabaseMonitorWorm",
+          "bases": [],
+          "methods": 20,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/db_monitor.py"
+        },
+        {
+          "name": "GRPOTrainer",
+          "bases": [],
+          "methods": 19,
+          "public_methods": 18,
+          "public": true,
+          "module": "expansion/learning_grpo.py"
+        },
+        {
+          "name": "EraEvidence",
+          "bases": [],
+          "methods": 18,
+          "public_methods": 15,
+          "public": true,
+          "module": "expansion/evidence.py"
+        },
+        {
+          "name": "ScheduledTrainingWorm",
+          "bases": [],
+          "methods": 18,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "SparseMoE",
+          "bases": [],
+          "methods": 17,
+          "public_methods": 8,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "ThompsonAllocator",
+          "bases": [],
+          "methods": 17,
+          "public_methods": 16,
+          "public": true,
+          "module": "expansion/allocation.py"
+        },
+        {
+          "name": "ProviderFailoverMeshWorm",
+          "bases": [],
+          "methods": 16,
+          "public_methods": 8,
+          "public": true,
+          "module": "expansion/servemesh.py"
+        },
+        {
+          "name": "NullsMaskRegistry",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 12,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "SessionStateManager",
+          "bases": [
+            "BaseWormMixin"
+          ],
+          "methods": 15,
+          "public_methods": 14,
+          "public": true,
+          "module": "expansion/session_state.py"
+        },
+        {
+          "name": "TensorGenome",
+          "bases": [],
+          "methods": 15,
+          "public_methods": 14,
+          "public": true,
+          "module": "expansion/tensorgene.py"
+        },
+        {
+          "name": "AblationStudy",
+          "bases": [],
+          "methods": 14,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/ablation_study.py"
+        },
+        {
+          "name": "AutoencoderAnomalyWorm",
+          "bases": [],
+          "methods": 14,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/immune.py"
+        },
+        {
+          "name": "MeshArchitectWorm",
+          "bases": [],
+          "methods": 13,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "RLTrainLoop",
+          "bases": [],
+          "methods": 13,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/learning_rl.py"
+        },
+        {
+          "name": "CPPNGenome",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/cppn.py"
+        },
+        {
+          "name": "ErrorRecoveryOrchestrator",
+          "bases": [],
+          "methods": 12,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/error_recovery.py"
+        },
+        {
+          "name": "Arena",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/arena.py"
+        },
+        {
+          "name": "Genome",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/morph.py"
+        },
+        {
+          "name": "InferenceLoadBalancerWorm",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/servemesh.py"
+        },
+        {
+          "name": "PlasticityEngineWorm",
+          "bases": [],
+          "methods": 11,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "ABTestRunner",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 9,
+          "public": true,
+          "module": "expansion/learning_grpo.py"
+        },
+        {
+          "name": "MorphogenesisWorm",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "RLTrainLoopV2",
+          "bases": [
+            "HookAwareTrainer"
+          ],
+          "methods": 10,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/trainers_v2.py"
+        },
+        {
+          "name": "RaceConditionDetector",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/race_detector.py"
+        },
+        {
+          "name": "TrainingOrchestrator",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "WiringAuditWorm",
+          "bases": [],
+          "methods": 10,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/wiring_audit.py"
+        },
+        {
+          "name": "BerksMonitorWorm",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/berks.py"
+        },
+        {
+          "name": "EvolutionIntegrityWorm",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/evolution_audit.py"
+        },
+        {
+          "name": "GemmaDriverWorm",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/driver.py"
+        },
+        {
+          "name": "HDC",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 8,
+          "public": true,
+          "module": "expansion/exmachina_operators.py"
+        },
+        {
+          "name": "LazyReplanner",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/lazy_replan.py"
+        },
+        {
+          "name": "LivenessLedger",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 8,
+          "public": true,
+          "module": "expansion/liveness.py"
+        },
+        {
+          "name": "MeshRouterWorm",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/mesh.py"
+        },
+        {
+          "name": "ModelVersioner",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/learning_versioner.py"
+        },
+        {
+          "name": "Neuromodulator",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/nerve.py"
+        },
+        {
+          "name": "XMemoryDecoupler",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/xmemory_decouple_aggregate.py"
+        },
+        {
+          "name": "_VectorIndex",
+          "bases": [],
+          "methods": 9,
+          "public_methods": 5,
+          "public": false,
+          "module": "expansion/engram.py"
+        },
+        {
+          "name": "BlackQueenWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/queens.py"
+        },
+        {
+          "name": "CuttingEdgeConfig",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "Environment",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/arena.py"
+        },
+        {
+          "name": "Lilith",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "MoEDispatcherWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/synapse.py"
+        },
+        {
+          "name": "RedQueenWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "ScheduledDbMonitorWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "SilenceLedger",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 7,
+          "public": true,
+          "module": "expansion/silence.py"
+        },
+        {
+          "name": "SpineGossipWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "WeeklyCodeAuditWorm",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/code_audit.py"
+        },
+        {
+          "name": "_LazyTorch",
+          "bases": [],
+          "methods": 8,
+          "public_methods": 3,
+          "public": false,
+          "module": "expansion/nerve.py"
+        },
+        {
+          "name": "DreamConsolidatorWorm",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/engram.py"
+        },
+        {
+          "name": "Fence",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/fencing.py"
+        },
+        {
+          "name": "GeneticOptimizer",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/evolution.py"
+        },
+        {
+          "name": "ImmuneSentinelWorm",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/immune.py"
+        },
+        {
+          "name": "KAN",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/exmachina_operators.py"
+        },
+        {
+          "name": "NoveltyDrive",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/loom.py"
+        },
+        {
+          "name": "NucleiBridge",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/nuclei.py"
+        },
+        {
+          "name": "PersistentMAPElites",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/diversity.py"
+        },
+        {
+          "name": "PowerBudgetWorm",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/metabolic.py"
+        },
+        {
+          "name": "ProtocolNegotiator",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/communication.py"
+        },
+        {
+          "name": "QuarantineWorm",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/immune.py"
+        },
+        {
+          "name": "RCPDEarlyExit",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/rcpd_early_exit.py"
+        },
+        {
+          "name": "RecallRouterWorm",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/engram.py"
+        },
+        {
+          "name": "RemediationEnv",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 6,
+          "public": true,
+          "module": "expansion/remediation_env.py"
+        },
+        {
+          "name": "SparseMoE",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/exmachina_operators.py"
+        },
+        {
+          "name": "_TracedLock",
+          "bases": [],
+          "methods": 7,
+          "public_methods": 3,
+          "public": false,
+          "module": "expansion/race_detector.py"
+        },
+        {
+          "name": "BarePassthroughWorm",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/envmesh.py"
+        },
+        {
+          "name": "Chorus",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/chorus.py"
+        },
+        {
+          "name": "ContainerOrch",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/container.py"
+        },
+        {
+          "name": "EProcess",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/exmachina.py"
+        },
+        {
+          "name": "EchoState",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/exmachina_operators.py"
+        },
+        {
+          "name": "EligibilityTraceTable",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "FeatureEngineer",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/learning_features.py"
+        },
+        {
+          "name": "GeneSpec",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/morph.py"
+        },
+        {
+          "name": "JevAdvisor",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/jev_advisor.py"
+        },
+        {
+          "name": "RewardShaperMeshWorm",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/federated.py"
+        },
+        {
+          "name": "SSMSequenceWorm",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/synapse.py"
+        },
+        {
+          "name": "SchemaAwareFeatureExtractor",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/learning_features.py"
+        },
+        {
+          "name": "SecretRotator",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/config.py"
+        },
+        {
+          "name": "SynapseWeightWorm",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/synapse.py"
+        },
+        {
+          "name": "ThermalThrottleWorm",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/metabolic.py"
+        },
+        {
+          "name": "TrustRegionBO",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/exmachina_operators.py"
+        },
+        {
+          "name": "VectorShardWorm",
+          "bases": [],
+          "methods": 6,
+          "public_methods": 5,
+          "public": true,
+          "module": "expansion/engram.py"
+        },
+        {
+          "name": "ABTestRunner",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/learning_ab.py"
+        },
+        {
+          "name": "AttentionRouterWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/synapse.py"
+        },
+        {
+          "name": "EventRouter",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/telemetry.py"
+        },
+        {
+          "name": "GRPOTrainerV2",
+          "bases": [
+            "HookAwareTrainer"
+          ],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/trainers_v2.py"
+        },
+        {
+          "name": "GraphRenderer",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/visualization.py"
+        },
+        {
+          "name": "HomeostatWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "HookAwareTrainer",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/trainers_v2.py"
+        },
+        {
+          "name": "IPCBridge",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/communication.py"
+        },
+        {
+          "name": "LeaderElectorWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/consensus.py"
+        },
+        {
+          "name": "MetricAggregator",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/telemetry.py"
+        },
+        {
+          "name": "MicrogliaWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/glia.py"
+        },
+        {
+          "name": "ModelShardServerWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/servemesh.py"
+        },
+        {
+          "name": "PartitionHealerWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/mesh.py"
+        },
+        {
+          "name": "TensorGene",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/tensorgene.py"
+        },
+        {
+          "name": "ThreatIntelMonitorWorm",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/threatmon.py"
+        },
+        {
+          "name": "VersionVector",
+          "bases": [],
+          "methods": 5,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/xmemory_decouple_aggregate.py"
+        },
+        {
+          "name": "ActivationRouterWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/synapse.py"
+        },
+        {
+          "name": "AlertEscalator",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/telemetry.py"
+        },
+        {
+          "name": "ArousalSwitchWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/thalamus.py"
+        },
+        {
+          "name": "AttentionGateWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/dendrite.py"
+        },
+        {
+          "name": "AttestationWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/immune.py"
+        },
+        {
+          "name": "CPUFlameProfiler",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/profiling.py"
+        },
+        {
+          "name": "CertMonitor",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/security.py"
+        },
+        {
+          "name": "CheckpointWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/backup.py"
+        },
+        {
+          "name": "CodeMigrator",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/migration.py"
+        },
+        {
+          "name": "CodeProfiler",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/profiling.py"
+        },
+        {
+          "name": "CoherenceValidatorWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/engram.py"
+        },
+        {
+          "name": "ConfigLinter",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/config.py"
+        },
+        {
+          "name": "DashboardGen",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/visualization.py"
+        },
+        {
+          "name": "DendriteAggregatorWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/dendrite.py"
+        },
+        {
+          "name": "DepUpgrader",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/migration.py"
+        },
+        {
+          "name": "ElasticConsolidationWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/plasticity.py"
+        },
+        {
+          "name": "EngramIndexerWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/consolidation.py"
+        },
+        {
+          "name": "EnvBeaconWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/mesh.py"
+        },
+        {
+          "name": "FailureDigest",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/chorus.py"
+        },
+        {
+          "name": "FeatureFlagCtrl",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/config.py"
+        },
+        {
+          "name": "FederatedAggregatorWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/federated.py"
+        },
+        {
+          "name": "FirewallAudit",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/security.py"
+        },
+        {
+          "name": "ForgettingCurveWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/plasticity.py"
+        },
+        {
+          "name": "GossipSyncWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/mesh.py"
+        },
+        {
+          "name": "GrayQueenWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/queens.py"
+        },
+        {
+          "name": "HeatmapBuilder",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/visualization.py"
+        },
+        {
+          "name": "HybridRewardComputer",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/hybrid_rewards.py"
+        },
+        {
+          "name": "ImportPathFixWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/migration.py"
+        },
+        {
+          "name": "IncrementalBackupWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/backup.py"
+        },
+        {
+          "name": "LatencyCompensatorWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/axon.py"
+        },
+        {
+          "name": "LegacyShimGen",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/migration.py"
+        },
+        {
+          "name": "LinUCBAllocator",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/allocation.py"
+        },
+        {
+          "name": "LogStreamer",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/telemetry.py"
+        },
+        {
+          "name": "MessageBroker",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/communication.py"
+        },
+        {
+          "name": "MyelinSheathWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/axon.py"
+        },
+        {
+          "name": "NASMeshSearcherWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/federated.py"
+        },
+        {
+          "name": "NSGAIII",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/diversity.py"
+        },
+        {
+          "name": "OvomorphWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "QuorumVoterWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/consensus.py"
+        },
+        {
+          "name": "RPCEndpoint",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/communication.py"
+        },
+        {
+          "name": "RecoveryTester",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/backup.py"
+        },
+        {
+          "name": "ResourceQuotaWatch",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/container.py"
+        },
+        {
+          "name": "SPOTracker",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/policy_optimization.py"
+        },
+        {
+          "name": "STDPClockWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/plasticity.py"
+        },
+        {
+          "name": "SchemaVersioner",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/migration.py"
+        },
+        {
+          "name": "SelfHealWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/immune.py"
+        },
+        {
+          "name": "SepCMAES",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/evolution.py"
+        },
+        {
+          "name": "SharpWaveReplayWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/consolidation.py"
+        },
+        {
+          "name": "SpanTracer",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/telemetry.py"
+        },
+        {
+          "name": "SpawnCredit",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/spawn_credit.py"
+        },
+        {
+          "name": "SplitBrainResolverWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/consensus.py"
+        },
+        {
+          "name": "SquaredExponentialGP",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/exmachina_operators.py"
+        },
+        {
+          "name": "StateSnapshotter",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/backup.py"
+        },
+        {
+          "name": "TPESurrogate",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/evolution.py"
+        },
+        {
+          "name": "UtilityGuidedOrchestrator",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/utility_guided_orchestration.py"
+        },
+        {
+          "name": "VulnScanner",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/security.py"
+        },
+        {
+          "name": "WebhookRelay",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/communication.py"
+        },
+        {
+          "name": "WinBridgeWorm",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/envmesh.py"
+        },
+        {
+          "name": "WiringGenome",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/wiring_genome.py"
+        },
+        {
+          "name": "WormOutcome",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 4,
+          "public": true,
+          "module": "expansion/spawn_credit.py"
+        },
+        {
+          "name": "_Ignoring",
+          "bases": [],
+          "methods": 4,
+          "public_methods": 1,
+          "public": false,
+          "module": "expansion/silence.py"
+        },
+        {
+          "name": "ArenaWorld",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/arena.py"
+        },
+        {
+          "name": "AstrocyteWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/glia.py"
+        },
+        {
+          "name": "AttentionBlock",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "ChaosWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/chaos.py"
+        },
+        {
+          "name": "ChestbursterWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "ColdArchivist",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/backup.py"
+        },
+        {
+          "name": "ComposeValidator",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/container.py"
+        },
+        {
+          "name": "ConsolidationWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "ContextConcatWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/dendrite.py"
+        },
+        {
+          "name": "DifferentialEvolution",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/evolution.py"
+        },
+        {
+          "name": "DreamCriticWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/consolidation.py"
+        },
+        {
+          "name": "DroneWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "EnvBeaconV2Worm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/envmesh.py"
+        },
+        {
+          "name": "EpendymalWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/glia.py"
+        },
+        {
+          "name": "FFNBlock",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "FacehuggerWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "GenWindowsMeshUnknown",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/generated/_staging/gen_windows_mesh_unknown.py"
+        },
+        {
+          "name": "HebbianUpdaterWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/plasticity.py"
+        },
+        {
+          "name": "IOBottleneckFinder",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/profiling.py"
+        },
+        {
+          "name": "ImageAuditor",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/container.py"
+        },
+        {
+          "name": "InstructionChannel",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/schema_instruction_channel.py"
+        },
+        {
+          "name": "MCTSPlanner",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/allocation.py"
+        },
+        {
+          "name": "MemoryLeakDetector",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/profiling.py"
+        },
+        {
+          "name": "MoodTracker",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/exmachina.py"
+        },
+        {
+          "name": "PermissionScanner",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/security.py"
+        },
+        {
+          "name": "PortAuditor",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/security.py"
+        },
+        {
+          "name": "PraetorianWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "QuotaEnforcerWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/metabolic.py"
+        },
+        {
+          "name": "RegistryPoller",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/container.py"
+        },
+        {
+          "name": "ReportCompiler",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/visualization.py"
+        },
+        {
+          "name": "ResinWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/xenomorph.py"
+        },
+        {
+          "name": "SB3TrainerV2",
+          "bases": [
+            "HookAwareTrainer"
+          ],
+          "methods": 3,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/trainers_v2.py"
+        },
+        {
+          "name": "SaltatoryRouterWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/axon.py"
+        },
+        {
+          "name": "ScoutBeeWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/queens.py"
+        },
+        {
+          "name": "SelectiveSSM",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "SensoryFuseWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/dendrite.py"
+        },
+        {
+          "name": "SensoryRelayWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/thalamus.py"
+        },
+        {
+          "name": "SleepConsolidatorWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/consolidation.py"
+        },
+        {
+          "name": "SpikeEncoderWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/axon.py"
+        },
+        {
+          "name": "SpineMapperWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/spine.py"
+        },
+        {
+          "name": "ThalamicGateWorm",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/thalamus.py"
+        },
+        {
+          "name": "TimelineViz",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/visualization.py"
+        },
+        {
+          "name": "TrainerContext",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 3,
+          "public": true,
+          "module": "expansion/trainers_v2.py"
+        },
+        {
+          "name": "_Expert",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": false,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "_Obliged",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/liveness.py"
+        },
+        {
+          "name": "_Rand",
+          "bases": [],
+          "methods": 3,
+          "public_methods": 2,
+          "public": false,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "AlgorithmLabWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/algorithm_observers.py"
+        },
+        {
+          "name": "DotfileSync",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/config.py"
+        },
+        {
+          "name": "EnvValidator",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/config.py"
+        },
+        {
+          "name": "GDriveLoomWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/envmesh.py"
+        },
+        {
+          "name": "GILContentionProbe",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/profiling.py"
+        },
+        {
+          "name": "InstructionSchema",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/schema_instruction_channel.py"
+        },
+        {
+          "name": "MetaEvolutionWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/algorithm_observers.py"
+        },
+        {
+          "name": "NoveltySearch",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/diversity.py"
+        },
+        {
+          "name": "NullsFFNBlock",
+          "bases": [
+            "FFNBlock"
+          ],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/cutting_edge_model.py"
+        },
+        {
+          "name": "OligodendrocyteWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/glia.py"
+        },
+        {
+          "name": "ScheduleConfig",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "SuccessiveHalvingPruner",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/allocation.py"
+        },
+        {
+          "name": "UtilityEngine",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/utility_guided_orchestration.py"
+        },
+        {
+          "name": "WslKaliWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/envmesh.py"
+        },
+        {
+          "name": "WslUbuntuWorm",
+          "bases": [],
+          "methods": 2,
+          "public_methods": 2,
+          "public": true,
+          "module": "expansion/envmesh.py"
+        },
+        {
+          "name": "AblationComponent",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/ablation_study.py"
+        },
+        {
+          "name": "AnchorRetrievalWorm",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/anchor_retrieval.py"
+        },
+        {
+          "name": "Anchors",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/anchor_retrieval.py"
+        },
+        {
+          "name": "ClarificationTimeout",
+          "bases": [
+            "Exception"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/delegation.py"
+        },
+        {
+          "name": "CodeAuditConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/code_audit.py"
+        },
+        {
+          "name": "EvolutionAuditConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/evolution_audit.py"
+        },
+        {
+          "name": "GeneCheck",
+          "bases": [
+            "NamedTuple"
+          ],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/rl_gene_bounds.py"
+        },
+        {
+          "name": "Individual",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/diversity.py"
+        },
+        {
+          "name": "MarsClaim",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/mars_claims.py"
+        },
+        {
+          "name": "MarsVerdict",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/mars_claims.py"
+        },
+        {
+          "name": "NeedsClarification",
+          "bases": [
+            "Exception"
+          ],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/delegation.py"
+        },
+        {
+          "name": "PolicyEvidence",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/policy_optimization.py"
+        },
+        {
+          "name": "TokenTrace",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/policy_optimization.py"
+        },
+        {
+          "name": "UtilityEstimate",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 1,
+          "public": true,
+          "module": "expansion/utility_guided_orchestration.py"
+        },
+        {
+          "name": "WiringAuditConfig",
+          "bases": [],
+          "methods": 1,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/wiring_audit.py"
+        },
+        {
+          "name": "AblationConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/ablation_study.py"
+        },
+        {
+          "name": "AblationResult",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/ablation_study.py"
+        },
+        {
+          "name": "AblationSummary",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/ablation_study.py"
+        },
+        {
+          "name": "BerksAlert",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/berks.py"
+        },
+        {
+          "name": "BerksSiteSnapshot",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/berks.py"
+        },
+        {
+          "name": "ConflictRecord",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/xmemory_decouple_aggregate.py"
+        },
+        {
+          "name": "DbAlert",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/db_monitor.py"
+        },
+        {
+          "name": "DbHealthSnapshot",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/db_monitor.py"
+        },
+        {
+          "name": "DbMonitorRun",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "DbMonitorScheduleConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "Dream",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/dreaming.py"
+        },
+        {
+          "name": "Genome",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/evolution.py"
+        },
+        {
+          "name": "InstructionSchemaError",
+          "bases": [
+            "Exception"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/schema_instruction_channel.py"
+        },
+        {
+          "name": "InstructionShape",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/schema_instruction_channel.py"
+        },
+        {
+          "name": "JevAnswer",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/jev_advisor.py"
+        },
+        {
+          "name": "JevError",
+          "bases": [
+            "Exception"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/jev_advisor.py"
+        },
+        {
+          "name": "JevUnavailable",
+          "bases": [
+            "JevError"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/jev_advisor.py"
+        },
+        {
+          "name": "MarsPolicy",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/mars_claims.py"
+        },
+        {
+          "name": "MemoryBank",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/xmemory_decouple_aggregate.py"
+        },
+        {
+          "name": "MemoryOp",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/xmemory_decouple_aggregate.py"
+        },
+        {
+          "name": "OperationType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/xmemory_decouple_aggregate.py"
+        },
+        {
+          "name": "OrchestrationAction",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/utility_guided_orchestration.py"
+        },
+        {
+          "name": "OrchestrationContext",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/utility_guided_orchestration.py"
+        },
+        {
+          "name": "OrchestratorConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "OrchestratorRun",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/scheduling.py"
+        },
+        {
+          "name": "PlanState",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/lazy_replan.py"
+        },
+        {
+          "name": "RecoveryEntry",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/error_recovery.py"
+        },
+        {
+          "name": "ReplanConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/lazy_replan.py"
+        },
+        {
+          "name": "ReplanTrigger",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/lazy_replan.py"
+        },
+        {
+          "name": "RewardConfig",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/hybrid_rewards.py"
+        },
+        {
+          "name": "RewardSource",
+          "bases": [
+            "Enum"
+          ],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/hybrid_rewards.py"
+        },
+        {
+          "name": "ThreatAlert",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/threatmon.py"
+        },
+        {
+          "name": "ThreatSnapshot",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/threatmon.py"
+        },
+        {
+          "name": "TrainingRun",
+          "bases": [],
+          "methods": 0,
+          "public_methods": 0,
+          "public": false,
+          "module": "expansion/scheduling.py"
+        }
+      ]
+    }
+  },
+  "worms": {
+    "total": 206,
+    "categories_named": 0,
+    "by_category": {
+      "diagnostic": 22,
+      "analysis": 14,
+      "learning": 14,
+      "orchestration": 10,
+      "monitor": 9,
+      "security": 8,
+      "xenomorph": 8,
+      "mesh": 7,
+      "synapse": 7,
+      "visualization": 7,
+      "communication": 6,
+      "envmesh": 6,
+      "telemetry": 6,
+      "backup": 5,
+      "config": 5,
+      "container": 5,
+      "engram": 5,
+      "immune": 5,
+      "migration": 5,
+      "plasticity": 5,
+      "profiling": 5,
+      "axon": 4,
+      "consolidation": 4,
+      "dendrite": 4,
+      "glia": 4,
+      "consensus": 3,
+      "federated": 3,
+      "metabolic": 3,
+      "servemesh": 3,
+      "sync": 3,
+      "thalamus": 3,
+      "utility": 3,
+      "ml": 2,
+      "defense": 1,
+      "expansion": 1,
+      "network": 1
+    },
+    "by_tree": {},
+    "by_owner": {},
+    "items": [
+      {
+        "class": "BenchmarkWorm",
+        "name": "BenchmarkWorm",
+        "category": "telemetry",
+        "module": "BENCHMARK_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "BinaryAnalysis",
+        "name": "BinaryAnalysis",
+        "category": "analysis",
+        "module": "BINARY_ANALYSIS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "CainWorm",
+        "name": "CainWorm",
+        "category": "analysis",
+        "module": "CAIN_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "CLAWBOT",
+        "name": "CLAWBOT",
+        "category": "communication",
+        "module": "CLAWBOT.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "CLOCKZ",
+        "name": "CLOCKZ",
+        "category": "sync",
+        "module": "CLOCKZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ClusterInspector",
+        "name": "ClusterInspector",
+        "category": "analysis",
+        "module": "CLUSTER_INSPECTOR.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ClusterWORMZ",
+        "name": "ClusterWORMZ",
+        "category": "orchestration",
+        "module": "CLUSTERWORMS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "CainAnalyzerWorm",
+        "name": "CainAnalyzerWorm",
+        "category": "analysis",
+        "module": "CODEX_TOOLS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "AutoDownloaderWorm",
+        "name": "AutoDownloaderWorm",
+        "category": "orchestration",
+        "module": "CODEX_TOOLS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "EmojiMakerWorm",
+        "name": "EmojiMakerWorm",
+        "category": "visualization",
+        "module": "CODEX_TOOLS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "EnhancedAnimationsWorm",
+        "name": "EnhancedAnimationsWorm",
+        "category": "visualization",
+        "module": "CODEX_TOOLS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ConcurrencyManager",
+        "name": "ConcurrencyManager",
+        "category": "orchestration",
+        "module": "CONCURRENCY.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ConcurrencyGateWorm",
+        "name": "ConcurrencyGateWorm",
+        "category": "mesh",
+        "module": "CONCURRENCY_GATE_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "DEPENDZ",
+        "name": "DEPENDZ",
+        "category": "analysis",
+        "module": "DEPENDZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "DiagnosticWorm",
+        "name": "DiagnosticWorm",
+        "category": "diagnostic",
+        "module": "DIAGNOSTIC_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "DISKZ",
+        "name": "DISKZ",
+        "category": "monitor",
+        "module": "DISKZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "DnsWorm",
+        "name": "DnsWorm",
+        "category": "network",
+        "module": "DNSWORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "FastErrorScanner",
+        "name": "FastErrorScanner",
+        "category": "diagnostic",
+        "module": "ERROR_SCAN_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "AnchorRetrievalWorm",
+        "name": "AnchorRetrievalWorm",
+        "category": "analysis",
+        "module": "expansion/anchor_retrieval.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MyelinSheathWorm",
+        "name": "MyelinSheathWorm",
+        "category": "axon",
+        "module": "expansion/axon.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SaltatoryRouterWorm",
+        "name": "SaltatoryRouterWorm",
+        "category": "axon",
+        "module": "expansion/axon.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SpikeEncoderWorm",
+        "name": "SpikeEncoderWorm",
+        "category": "axon",
+        "module": "expansion/axon.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "LatencyCompensatorWorm",
+        "name": "LatencyCompensatorWorm",
+        "category": "axon",
+        "module": "expansion/axon.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "StateSnapshotter",
+        "name": "StateSnapshotter",
+        "category": "backup",
+        "module": "expansion/backup.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "IncrementalBackupWorm",
+        "name": "IncrementalBackupWorm",
+        "category": "backup",
+        "module": "expansion/backup.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RecoveryTester",
+        "name": "RecoveryTester",
+        "category": "backup",
+        "module": "expansion/backup.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ColdArchivist",
+        "name": "ColdArchivist",
+        "category": "backup",
+        "module": "expansion/backup.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CheckpointWorm",
+        "name": "CheckpointWorm",
+        "category": "backup",
+        "module": "expansion/backup.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "BerksMonitorWorm",
+        "name": "BerksMonitorWorm",
+        "category": "monitor",
+        "module": "expansion/berks.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ChaosWorm",
+        "name": "ChaosWorm",
+        "category": "diagnostic",
+        "module": "expansion/chaos.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MessageBroker",
+        "name": "MessageBroker",
+        "category": "communication",
+        "module": "expansion/communication.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RPCEndpoint",
+        "name": "RPCEndpoint",
+        "category": "communication",
+        "module": "expansion/communication.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "WebhookRelay",
+        "name": "WebhookRelay",
+        "category": "communication",
+        "module": "expansion/communication.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "IPCBridge",
+        "name": "IPCBridge",
+        "category": "communication",
+        "module": "expansion/communication.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ProtocolNegotiator",
+        "name": "ProtocolNegotiator",
+        "category": "communication",
+        "module": "expansion/communication.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ConfigLinter",
+        "name": "ConfigLinter",
+        "category": "config",
+        "module": "expansion/config.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EnvValidator",
+        "name": "EnvValidator",
+        "category": "config",
+        "module": "expansion/config.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DotfileSync",
+        "name": "DotfileSync",
+        "category": "config",
+        "module": "expansion/config.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SecretRotator",
+        "name": "SecretRotator",
+        "category": "config",
+        "module": "expansion/config.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "FeatureFlagCtrl",
+        "name": "FeatureFlagCtrl",
+        "category": "config",
+        "module": "expansion/config.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "QuorumVoterWorm",
+        "name": "QuorumVoterWorm",
+        "category": "consensus",
+        "module": "expansion/consensus.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "LeaderElectorWorm",
+        "name": "LeaderElectorWorm",
+        "category": "consensus",
+        "module": "expansion/consensus.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SplitBrainResolverWorm",
+        "name": "SplitBrainResolverWorm",
+        "category": "consensus",
+        "module": "expansion/consensus.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SharpWaveReplayWorm",
+        "name": "SharpWaveReplayWorm",
+        "category": "consolidation",
+        "module": "expansion/consolidation.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SleepConsolidatorWorm",
+        "name": "SleepConsolidatorWorm",
+        "category": "consolidation",
+        "module": "expansion/consolidation.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EngramIndexerWorm",
+        "name": "EngramIndexerWorm",
+        "category": "consolidation",
+        "module": "expansion/consolidation.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DreamCriticWorm",
+        "name": "DreamCriticWorm",
+        "category": "consolidation",
+        "module": "expansion/consolidation.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ContainerOrch",
+        "name": "ContainerOrch",
+        "category": "container",
+        "module": "expansion/container.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ComposeValidator",
+        "name": "ComposeValidator",
+        "category": "container",
+        "module": "expansion/container.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ImageAuditor",
+        "name": "ImageAuditor",
+        "category": "container",
+        "module": "expansion/container.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RegistryPoller",
+        "name": "RegistryPoller",
+        "category": "container",
+        "module": "expansion/container.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ResourceQuotaWatch",
+        "name": "ResourceQuotaWatch",
+        "category": "container",
+        "module": "expansion/container.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CuttingEdgeModel",
+        "name": "CuttingEdgeModel",
+        "category": "learning",
+        "module": "expansion/cutting_edge_model.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DendriteAggregatorWorm",
+        "name": "DendriteAggregatorWorm",
+        "category": "dendrite",
+        "module": "expansion/dendrite.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "AttentionGateWorm",
+        "name": "AttentionGateWorm",
+        "category": "dendrite",
+        "module": "expansion/dendrite.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ContextConcatWorm",
+        "name": "ContextConcatWorm",
+        "category": "dendrite",
+        "module": "expansion/dendrite.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SensoryFuseWorm",
+        "name": "SensoryFuseWorm",
+        "category": "dendrite",
+        "module": "expansion/dendrite.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DreamingModule",
+        "name": "DreamingModule",
+        "category": "learning",
+        "module": "expansion/dreaming.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GemmaDriverWorm",
+        "name": "GemmaDriverWorm",
+        "category": "orchestration",
+        "module": "expansion/driver.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "VectorShardWorm",
+        "name": "VectorShardWorm",
+        "category": "engram",
+        "module": "expansion/engram.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RecallRouterWorm",
+        "name": "RecallRouterWorm",
+        "category": "engram",
+        "module": "expansion/engram.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CoherenceValidatorWorm",
+        "name": "CoherenceValidatorWorm",
+        "category": "engram",
+        "module": "expansion/engram.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DreamConsolidatorWorm",
+        "name": "DreamConsolidatorWorm",
+        "category": "engram",
+        "module": "expansion/engram.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "WinBridgeWorm",
+        "name": "WinBridgeWorm",
+        "category": "envmesh",
+        "module": "expansion/envmesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "WslUbuntuWorm",
+        "name": "WslUbuntuWorm",
+        "category": "envmesh",
+        "module": "expansion/envmesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "WslKaliWorm",
+        "name": "WslKaliWorm",
+        "category": "envmesh",
+        "module": "expansion/envmesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "BarePassthroughWorm",
+        "name": "BarePassthroughWorm",
+        "category": "envmesh",
+        "module": "expansion/envmesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GDriveLoomWorm",
+        "name": "GDriveLoomWorm",
+        "category": "envmesh",
+        "module": "expansion/envmesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EnvBeaconV2Worm",
+        "name": "EnvBeaconV2Worm",
+        "category": "envmesh",
+        "module": "expansion/envmesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ErrorRecoveryOrchestrator",
+        "name": "ErrorRecoveryOrchestrator",
+        "category": "orchestration",
+        "module": "expansion/error_recovery.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EvolutionEngine",
+        "name": "EvolutionEngine",
+        "category": "learning",
+        "module": "expansion/evolution.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GeneticOptimizer",
+        "name": "GeneticOptimizer",
+        "category": "learning",
+        "module": "expansion/evolution.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SepCMAES",
+        "name": "SepCMAES",
+        "category": "learning",
+        "module": "expansion/evolution.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "FederatedAggregatorWorm",
+        "name": "FederatedAggregatorWorm",
+        "category": "federated",
+        "module": "expansion/federated.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "NASMeshSearcherWorm",
+        "name": "NASMeshSearcherWorm",
+        "category": "federated",
+        "module": "expansion/federated.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RewardShaperMeshWorm",
+        "name": "RewardShaperMeshWorm",
+        "category": "federated",
+        "module": "expansion/federated.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GenWindowsMeshUnknown",
+        "name": "GenWindowsMeshUnknown",
+        "category": "expansion",
+        "module": "expansion/generated/_staging/gen_windows_mesh_unknown.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "AstrocyteWorm",
+        "name": "AstrocyteWorm",
+        "category": "glia",
+        "module": "expansion/glia.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "OligodendrocyteWorm",
+        "name": "OligodendrocyteWorm",
+        "category": "glia",
+        "module": "expansion/glia.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MicrogliaWorm",
+        "name": "MicrogliaWorm",
+        "category": "glia",
+        "module": "expansion/glia.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EpendymalWorm",
+        "name": "EpendymalWorm",
+        "category": "glia",
+        "module": "expansion/glia.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ImmuneSentinelWorm",
+        "name": "ImmuneSentinelWorm",
+        "category": "immune",
+        "module": "expansion/immune.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "QuarantineWorm",
+        "name": "QuarantineWorm",
+        "category": "immune",
+        "module": "expansion/immune.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "AttestationWorm",
+        "name": "AttestationWorm",
+        "category": "immune",
+        "module": "expansion/immune.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "AutoencoderAnomalyWorm",
+        "name": "AutoencoderAnomalyWorm",
+        "category": "immune",
+        "module": "expansion/immune.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SelfHealWorm",
+        "name": "SelfHealWorm",
+        "category": "immune",
+        "module": "expansion/immune.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ABTestRunner",
+        "name": "ABTestRunner",
+        "category": "learning",
+        "module": "expansion/learning_ab.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "FeatureEngineer",
+        "name": "FeatureEngineer",
+        "category": "learning",
+        "module": "expansion/learning_features.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ABTestRunner",
+        "name": "ABTestRunner",
+        "category": "learning",
+        "module": "expansion/learning_grpo.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DataPipelineWorm",
+        "name": "DataPipelineWorm",
+        "category": "learning",
+        "module": "expansion/learning_pipeline.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RLTrainLoop",
+        "name": "RLTrainLoop",
+        "category": "learning",
+        "module": "expansion/learning_rl.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ModelVersioner",
+        "name": "ModelVersioner",
+        "category": "learning",
+        "module": "expansion/learning_versioner.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MeshRouterWorm",
+        "name": "MeshRouterWorm",
+        "category": "mesh",
+        "module": "expansion/mesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GossipSyncWorm",
+        "name": "GossipSyncWorm",
+        "category": "mesh",
+        "module": "expansion/mesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "PartitionHealerWorm",
+        "name": "PartitionHealerWorm",
+        "category": "mesh",
+        "module": "expansion/mesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EnvBeaconWorm",
+        "name": "EnvBeaconWorm",
+        "category": "mesh",
+        "module": "expansion/mesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MetaCognitionWorm",
+        "name": "MetaCognitionWorm",
+        "category": "learning",
+        "module": "expansion/meta_cognition.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "PowerBudgetWorm",
+        "name": "PowerBudgetWorm",
+        "category": "metabolic",
+        "module": "expansion/metabolic.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ThermalThrottleWorm",
+        "name": "ThermalThrottleWorm",
+        "category": "metabolic",
+        "module": "expansion/metabolic.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "QuotaEnforcerWorm",
+        "name": "QuotaEnforcerWorm",
+        "category": "metabolic",
+        "module": "expansion/metabolic.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CodeMigrator",
+        "name": "CodeMigrator",
+        "category": "migration",
+        "module": "expansion/migration.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DepUpgrader",
+        "name": "DepUpgrader",
+        "category": "migration",
+        "module": "expansion/migration.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SchemaVersioner",
+        "name": "SchemaVersioner",
+        "category": "migration",
+        "module": "expansion/migration.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ImportPathFixWorm",
+        "name": "ImportPathFixWorm",
+        "category": "migration",
+        "module": "expansion/migration.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "LegacyShimGen",
+        "name": "LegacyShimGen",
+        "category": "migration",
+        "module": "expansion/migration.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "NucleiBridge",
+        "name": "NucleiBridge",
+        "category": "security",
+        "module": "expansion/nuclei.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "HebbianUpdaterWorm",
+        "name": "HebbianUpdaterWorm",
+        "category": "plasticity",
+        "module": "expansion/plasticity.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "STDPClockWorm",
+        "name": "STDPClockWorm",
+        "category": "plasticity",
+        "module": "expansion/plasticity.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ElasticConsolidationWorm",
+        "name": "ElasticConsolidationWorm",
+        "category": "plasticity",
+        "module": "expansion/plasticity.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ForgettingCurveWorm",
+        "name": "ForgettingCurveWorm",
+        "category": "plasticity",
+        "module": "expansion/plasticity.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CodeProfiler",
+        "name": "CodeProfiler",
+        "category": "profiling",
+        "module": "expansion/profiling.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MemoryLeakDetector",
+        "name": "MemoryLeakDetector",
+        "category": "profiling",
+        "module": "expansion/profiling.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "IOBottleneckFinder",
+        "name": "IOBottleneckFinder",
+        "category": "profiling",
+        "module": "expansion/profiling.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GILContentionProbe",
+        "name": "GILContentionProbe",
+        "category": "profiling",
+        "module": "expansion/profiling.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CPUFlameProfiler",
+        "name": "CPUFlameProfiler",
+        "category": "profiling",
+        "module": "expansion/profiling.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ScoutBeeWorm",
+        "name": "ScoutBeeWorm",
+        "category": "mesh",
+        "module": "expansion/queens.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GrayQueenWorm",
+        "name": "GrayQueenWorm",
+        "category": "monitor",
+        "module": "expansion/queens.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "BlackQueenWorm",
+        "name": "BlackQueenWorm",
+        "category": "analysis",
+        "module": "expansion/queens.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RaceConditionDetector",
+        "name": "RaceConditionDetector",
+        "category": "security",
+        "module": "expansion/race_detector.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "VulnScanner",
+        "name": "VulnScanner",
+        "category": "security",
+        "module": "expansion/security.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "PortAuditor",
+        "name": "PortAuditor",
+        "category": "security",
+        "module": "expansion/security.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "CertMonitor",
+        "name": "CertMonitor",
+        "category": "security",
+        "module": "expansion/security.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "FirewallAudit",
+        "name": "FirewallAudit",
+        "category": "security",
+        "module": "expansion/security.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "PermissionScanner",
+        "name": "PermissionScanner",
+        "category": "security",
+        "module": "expansion/security.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "InferenceLoadBalancerWorm",
+        "name": "InferenceLoadBalancerWorm",
+        "category": "servemesh",
+        "module": "expansion/servemesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ProviderFailoverMeshWorm",
+        "name": "ProviderFailoverMeshWorm",
+        "category": "servemesh",
+        "module": "expansion/servemesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ModelShardServerWorm",
+        "name": "ModelShardServerWorm",
+        "category": "servemesh",
+        "module": "expansion/servemesh.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SessionStateManager",
+        "name": "SessionStateManager",
+        "category": "utility",
+        "module": "expansion/session_state.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SpineMapperWorm",
+        "name": "SpineMapperWorm",
+        "category": "mesh",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "HomeostatWorm",
+        "name": "HomeostatWorm",
+        "category": "synapse",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "RedQueenWorm",
+        "name": "RedQueenWorm",
+        "category": "xenomorph",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SpineGossipWorm",
+        "name": "SpineGossipWorm",
+        "category": "sync",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "PlasticityEngineWorm",
+        "name": "PlasticityEngineWorm",
+        "category": "plasticity",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MeshArchitectWorm",
+        "name": "MeshArchitectWorm",
+        "category": "orchestration",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SpineCycleWorm",
+        "name": "SpineCycleWorm",
+        "category": "orchestration",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MorphogenesisWorm",
+        "name": "MorphogenesisWorm",
+        "category": "engram",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ConsolidationWorm",
+        "name": "ConsolidationWorm",
+        "category": "learning",
+        "module": "expansion/spine.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SynapseWeightWorm",
+        "name": "SynapseWeightWorm",
+        "category": "synapse",
+        "module": "expansion/synapse.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MoEDispatcherWorm",
+        "name": "MoEDispatcherWorm",
+        "category": "synapse",
+        "module": "expansion/synapse.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SSMSequenceWorm",
+        "name": "SSMSequenceWorm",
+        "category": "synapse",
+        "module": "expansion/synapse.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "AttentionRouterWorm",
+        "name": "AttentionRouterWorm",
+        "category": "synapse",
+        "module": "expansion/synapse.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ActivationRouterWorm",
+        "name": "ActivationRouterWorm",
+        "category": "synapse",
+        "module": "expansion/synapse.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SpanTracer",
+        "name": "SpanTracer",
+        "category": "telemetry",
+        "module": "expansion/telemetry.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "MetricAggregator",
+        "name": "MetricAggregator",
+        "category": "telemetry",
+        "module": "expansion/telemetry.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "LogStreamer",
+        "name": "LogStreamer",
+        "category": "telemetry",
+        "module": "expansion/telemetry.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "EventRouter",
+        "name": "EventRouter",
+        "category": "telemetry",
+        "module": "expansion/telemetry.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "AlertEscalator",
+        "name": "AlertEscalator",
+        "category": "telemetry",
+        "module": "expansion/telemetry.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ThalamicGateWorm",
+        "name": "ThalamicGateWorm",
+        "category": "thalamus",
+        "module": "expansion/thalamus.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "SensoryRelayWorm",
+        "name": "SensoryRelayWorm",
+        "category": "thalamus",
+        "module": "expansion/thalamus.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ArousalSwitchWorm",
+        "name": "ArousalSwitchWorm",
+        "category": "thalamus",
+        "module": "expansion/thalamus.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ThreatIntelMonitorWorm",
+        "name": "ThreatIntelMonitorWorm",
+        "category": "monitor",
+        "module": "expansion/threatmon.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DashboardGen",
+        "name": "DashboardGen",
+        "category": "visualization",
+        "module": "expansion/visualization.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "GraphRenderer",
+        "name": "GraphRenderer",
+        "category": "visualization",
+        "module": "expansion/visualization.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ReportCompiler",
+        "name": "ReportCompiler",
+        "category": "visualization",
+        "module": "expansion/visualization.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "HeatmapBuilder",
+        "name": "HeatmapBuilder",
+        "category": "visualization",
+        "module": "expansion/visualization.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "TimelineViz",
+        "name": "TimelineViz",
+        "category": "visualization",
+        "module": "expansion/visualization.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "OvomorphWorm",
+        "name": "OvomorphWorm",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "FacehuggerWorm",
+        "name": "FacehuggerWorm",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ChestbursterWorm",
+        "name": "ChestbursterWorm",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "DroneWorm",
+        "name": "DroneWorm",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "PraetorianWorm",
+        "name": "PraetorianWorm",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "Lilith",
+        "name": "Lilith",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "ResinWorm",
+        "name": "ResinWorm",
+        "category": "xenomorph",
+        "module": "expansion/xenomorph.py",
+        "tree": "expansion"
+      },
+      {
+        "class": "InferenceSubscriberWorm",
+        "name": "InferenceSubscriberWorm",
+        "category": "analysis",
+        "module": "INFERENCE_SUBSCRIBER.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "InferenceWorm",
+        "name": "InferenceWorm",
+        "category": "analysis",
+        "module": "INFERENCE_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "MetaCluster",
+        "name": "MetaCluster",
+        "category": "orchestration",
+        "module": "METACLUSTER.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "METAZ",
+        "name": "METAZ",
+        "category": "analysis",
+        "module": "METAZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "MorphingWormV2",
+        "name": "MorphingWormV2",
+        "category": "diagnostic",
+        "module": "MORPHING_WORM_V2.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "NetworkDiag",
+        "name": "NetworkDiag",
+        "category": "diagnostic",
+        "module": "NETWORK_DIAG.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "NETWORXZ",
+        "name": "NETWORXZ",
+        "category": "monitor",
+        "module": "NETWORXZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "NimInferenceWorm",
+        "name": "NimInferenceWorm",
+        "category": "analysis",
+        "module": "NIM_INFERENCE.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "OMNIV2",
+        "name": "OMNIV2",
+        "category": "utility",
+        "module": "OMNI_WORM_V2.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "OSCongruency",
+        "name": "OSCongruency",
+        "category": "monitor",
+        "module": "OS_CONGRUENCY.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ParallelInferenceWorm",
+        "name": "ParallelInferenceWorm",
+        "category": "analysis",
+        "module": "PARALLEL_INFERENCE_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "PERSEPHONEWORM",
+        "name": "PERSEPHONEWORM",
+        "category": "sync",
+        "module": "PERSEPHONE_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "PipelineWorm",
+        "name": "PipelineWorm",
+        "category": "orchestration",
+        "module": "PIPELINE_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "POINDEXTERWORM",
+        "name": "POINDEXTERWORM",
+        "category": "analysis",
+        "module": "POINDEXTER_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "PROCESSZ",
+        "name": "PROCESSZ",
+        "category": "monitor",
+        "module": "PROCESSZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ReverseTools",
+        "name": "ReverseTools",
+        "category": "analysis",
+        "module": "REVERSE_TOOLS.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "SMARTDISK",
+        "name": "SMARTDISK",
+        "category": "monitor",
+        "module": "SMARTDISK.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "SpeculativeForkWorm",
+        "name": "SpeculativeForkWorm",
+        "category": "synapse",
+        "module": "SPECULATIVE_FORK_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "StrideVerifierWorm",
+        "name": "StrideVerifierWorm",
+        "category": "security",
+        "module": "STRIDE_VERIFIER_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "SystemZ",
+        "name": "SystemZ",
+        "category": "monitor",
+        "module": "SYSTEMZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "SYSTEMZ_ML",
+        "name": "SYSTEMZ_ML",
+        "category": "ml",
+        "module": "SYSTEMZ_ML.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "PythonSystemMapperWorm",
+        "name": "PythonSystemMapperWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "PythonMapperQuickWorm",
+        "name": "PythonMapperQuickWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "PythonSystemMapperFullWorm",
+        "name": "PythonSystemMapperFullWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ArchiveSystemWorm",
+        "name": "ArchiveSystemWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "DebugRunnerWorm",
+        "name": "DebugRunnerWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "QwythosProxyWorm",
+        "name": "QwythosProxyWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ComprehensiveFixWorm",
+        "name": "ComprehensiveFixWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "QLAnalysisWorm",
+        "name": "QLAnalysisWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "EnvironmentManagerWorm",
+        "name": "EnvironmentManagerWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "TrimzWorm",
+        "name": "TrimzWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "ErrorzWorm",
+        "name": "ErrorzWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "HealthzWorm",
+        "name": "HealthzWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "MetriczWorm",
+        "name": "MetriczWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "MonitorLearningWorm",
+        "name": "MonitorLearningWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "LspDiagnosisWorm",
+        "name": "LspDiagnosisWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "EnvironUpdaterWorm",
+        "name": "EnvironUpdaterWorm",
+        "category": "diagnostic",
+        "module": "TOOLBELTZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "VideoAnalyzerWorm",
+        "name": "VideoAnalyzerWorm",
+        "category": "diagnostic",
+        "module": "VIDEO_ANALYZER_WORM.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "WormFleet",
+        "name": "WormFleet",
+        "category": "orchestration",
+        "module": "WORM_FLEET.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "WormSelectorWorm",
+        "name": "WormSelectorWorm",
+        "category": "learning",
+        "module": "WORM_SELECTOR.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "WORMZ",
+        "name": "WORMZ",
+        "category": "utility",
+        "module": "WORMZ.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "WORMZ_ML",
+        "name": "WORMZ_ML",
+        "category": "ml",
+        "module": "WORMZ_ML.py",
+        "tree": "(root)"
+      },
+      {
+        "class": "WSLRecovery",
+        "name": "WSLRecovery",
+        "category": "defense",
+        "module": "WSL_RECOVERY_WORM.py",
+        "tree": "(root)"
+      }
+    ]
+  },
+  "edges": {
+    "pairs": 0,
+    "statements": 0,
+    "tree_pairs": 0
+  },
+  "canon": {
+    "files": [],
+    "rules": 0
+  },
+  "skills": {},
+  "evidence": {},
+  "languages": {
+    "json": 1,
+    "python": 152
+  },
+  "cross_root_edges_resolved": true,
+  "notes": [
+    "one hive per worm category; registry counted separately because registration is not housing",
+    "WORMS: merged from its own scan; edges to other roots of this domain are NOT resolved",
+    "limbs are worm CATEGORIES, not paths: `modules` on a category limb counts worms registered in it (206 total), and per-category class counts are not computed. The path view is preserved under `paths_trees`.",
+    "Single root domain; cross_root_edges_resolved=True by default"
+  ],
+  "missing": [],
+  "paths_trees": {
+    "WORMS.expansion": {
+      "modules": 93,
+      "lines": 49763,
+      "classes": 275,
+      "funcs": 258,
+      "methods": 1455,
+      "public_api": 526,
+      "silence": 243,
+      "mains": 7,
+      "hubs": [
+        "audit",
+        "inference",
+        "memorybus",
+        "pams",
+        "paths",
+        "worm_registry"
+      ],
+      "subs": 2,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 3,
+      "shard_remainder": 21
+    },
+    "worm_registry": {
+      "modules": 1,
+      "lines": 2280,
+      "classes": 3,
+      "funcs": 38,
+      "methods": 14,
+      "public_api": 3,
+      "silence": 0,
+      "mains": 0,
+      "hubs": [],
+      "subs": 0,
+      "inbound_trees": [],
+      "outbound_trees": [],
+      "standalone": true,
+      "is_trunk": false,
+      "saplings": 0,
+      "shard_remainder": 0,
+      "kind": "file"
+    }
+  },
+  "limbs_from": "worms.by_category"
+}
